@@ -1,5 +1,9 @@
 # C++ Fundamentals
 
+## Course description
+
+The **C++ Fundamentals** course aims to cover the fundamentals about using and coding in C++.  
+
 ##  Course Program
 
 * C++ introduction

@@ -16,5 +16,6 @@
 | C++ Classes                             | Jan
 | C++ Inheritance                         | Jan
 | Exceptions                              | Jan
+| Templates                               | Feb
 | STL fundamentals                        | Feb
 | Advanced STL                            | Feb

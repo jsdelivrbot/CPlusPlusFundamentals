@@ -179,8 +179,8 @@ There are lots of C++ compilers
 
 <!-- attr: {id: 'vim'}  -->
 # Editors: VIM
-* Vi IMproved
-	 CLI and GUI mode (gVim)
+* **VIM** (Vi IMproved)
+	* CLI and GUI mode (gVim)
 	* Highly configurable
 	* Extensible through plugins
 	* Can be used for all kinds of text editing

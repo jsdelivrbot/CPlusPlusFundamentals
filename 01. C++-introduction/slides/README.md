@@ -89,8 +89,36 @@
 #   C++ Program Structure
 ##   Entry point, including libraries, termination
 
+#   C++ Program Structure
+*   Program entry point
+  *   C++ is free form – any ordering of program components is acceptable
+  *   C++ needs specific function to start from
+*   The main function – entry point of the program
+  *   No other function can be named "main"
+  *   Can receive command line parameters
+*   Termination – main returns, the program stops
+  *   The return value of main is the "exit code“
+  *   0 means no errors – informative, not obligatory
 
+<!-- attr: {hasScriptWrapper: true} -->
+#   C++ Classical "Hello World" Example
+
+* This is a classical "Hello World" example in C++:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(int argc, char * argv[])
+{
+    cout<<"Hello World!"<<endl;
+
+    return 0;
+}
+```
 
 <!-- section start -->
-<!-- attr: {id: ''} -->
-#
+<!-- attr: {id: 'questions', class:'slide-questions'} -->
+
+# Introduction to C++
+##  Questions

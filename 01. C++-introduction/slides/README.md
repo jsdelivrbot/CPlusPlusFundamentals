@@ -15,7 +15,7 @@
 #   Table of Contents
 
 *   What is C++?
-    *   History, Concepts & Philosophy, Standarts
+    *   History, Concepts & Philosophy, Standards
 *   C++ Basic Program Structure
     *   Entry point, libraries, namespaces, etc...
 *   C++ Compilers and IDEs
@@ -71,7 +71,7 @@
 *   More at http://en.wikipedia.org/wiki/C++#Philosophy
 
 
-#   C++ Standarts
+#   C++ Standards
 
 *     **C++ 98** - first standardized C++ version
     *   Still massively used today
@@ -195,7 +195,7 @@ There are lots of C++ compilers
 
 <!-- attr: {class: 'slide-section', id: 'cpp-features'} -->
 # C++ Features
-##  Notable C++ Features, Supported in all Standarts
+##  Notable C++ Features, Supported in all Standards
 
 
 # C++ Features
@@ -219,7 +219,7 @@ There are lots of C++ compilers
 
 # C++ Features
 
-*   Standart Library
+*   Standard Library
     *   Set of libraries, data structures and algorithms
     *   Largely based on the [STL](https://en.wikipedia.org/wiki/Standard_Template_Library)
 *   Exceptions

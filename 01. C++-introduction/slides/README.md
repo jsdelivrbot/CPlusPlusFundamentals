@@ -3,7 +3,7 @@
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 
 #   C++ Introduction
-##    What is C++, Features,  Compilers, IDEs
+##    What is C++, Features, Compilers, IDEs
 <div class="signature">
     <p class="signature-course">C++ Fundamentals</p>
     <p class="signature-initiative">Telerik Algo Academy</p>
@@ -132,7 +132,7 @@ int main(int argc, char * argv[]) {
 <!-- section start -->
 
 <!-- attr: {class: 'slide-section', id: 'cpp-ides-compilers'} -->
-#   C++ IDEs and Compilers
+#   C++ IDEs, Editors and Compilers
 ##  Compiling code, Integrated Development Environments
 
 #   C++ Compilers
@@ -178,11 +178,16 @@ There are lots of C++ compilers
 ##    Live Demo
 
 <!-- attr: {id: 'vim'}  -->
-# C++ IDEs: VIM
+# Editors: VIM
+* Vi IMproved
+	 CLI and GUI mode (gVim)
+	* Highly configurable
+	* Extensible through plugins
+	* Can be used for all kinds of text editing
+		* not just programming
+	* Tool, the use of which must be learned
 
-*     **TODO**
-
-<!-- attr: {class:'slide-section'} -->
+<!-- attr: {class: 'slide-section'} -->
 #   VIM
 ##    Live Demo
 

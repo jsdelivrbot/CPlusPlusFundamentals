@@ -105,16 +105,18 @@
 
 * This is a classical "Hello World" example in C++:
 
-      #include <iostream>
+```cpp
+#include <iostream>
 
-      using namespace std;
+using namespace std;
 
-      int main(int argc, char * argv[]) {
+int main(int argc, char * argv[]) {
 
-          cout<<"Hello World!"<<endl;
+    cout<<"Hello World!"<<endl;
 
-          return 0;
-      }
+    return 0;
+}
+```
 
 *   Include the input-output library <!-- .element: class="balloon" style="top: 30%; left:45%" -->
 *   Say we're working with std namespace <!-- .element: class="balloon" style="top: 37%; left:45%" -->

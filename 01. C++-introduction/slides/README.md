@@ -184,7 +184,7 @@ There are lots of C++ compilers
 	* Highly configurable
 	* Extensible through plugins
 	* Can be used for all kinds of text editing
-		* not just programming
+		* Not just programming
 	* Tool, the use of which must be learned
 
 <!-- attr: {class: 'slide-section'} -->

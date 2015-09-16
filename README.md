@@ -98,6 +98,10 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 *   Throwing exceptions
 *   Defining custom exceptions
 
+### Templates
+  * Function templates
+  * Class templates
+
 ###  STL fundamentals
   * Containers
   * Iterators

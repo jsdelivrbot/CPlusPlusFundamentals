@@ -88,22 +88,25 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 
 ###  References, pointers and memory in C++
 
-*   References (Lvalues)
-*   Rvalues
-  *   `std::move`
 *   Pointers
+*   **Lvalues** (references)
+*   **Rvalues**
+  *   `std::move`
 *   Smart pointers
 
-###  C++ Classes
+###  C++ User types - Classes, Structs and Union
 
 *   Declaring classes
 *   Instantiating classes
 *   Access modifiers
+*   Unions
 
 ###  C++ Inheritance
 
 *   Inheriting classes
 *   Multiple Inheritance
+*   Abstract classes and methods
+*   Virtual methods
 
 ###   Memory Management
 *   Allocating and deallocating object
@@ -119,14 +122,31 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 *   Throwing exceptions
 *   Defining custom exceptions
 
-### Templates
+###   Templates
 *   Function templates
 *   Class templates
 
 ###  STL fundamentals
 *   Containers
+    *   `vector<T>`
 *   Iterators
+    *   **TODO**
+    *   Random-access
 
-### Advanced STL
-*   Tree-like containers
-*   Hash tables
+###   STL Algorithms
+*   Sorting
+*   Searching
+*   Random
+*   **TODO**
+
+###   Linear Data Structures STL
+*   Linear data structures
+    *   `queue<T>`, `vector<T>`, `stack<T>`, `deque<T>`, `list<T>`, etc...
+
+###  Tree-like data structures and hash tables
+*   Tree-like data structures:
+    * **TODO**
+*   Heaps
+  * **TODO**  
+*   HashTables
+    * **TODO**

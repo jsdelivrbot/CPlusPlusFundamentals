@@ -20,6 +20,8 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
   *   `char`
 *   String values
   *   `char[]`, `std::string`
+*   Type inference
+  *   `auto`, `decltype`
 
 ###  Console IO
 
@@ -32,11 +34,16 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 ###  Operators and expressions
 
 *   Logical operators
-  *   `||`, `&&`, `^`, `!`
-*   Compare operators
+  *   `||`, `&&`, `!`
+*   Comparison operators
   *   `>`, `>=`, `<`, `<=`, `==`, `!=`
 *   Bitwise operators
-  *   `|`, `&`, `~`
+  *   `|`, `&`, `~`, `^`, `<<`, `>>`
+*   Other operators
+  *   Arithmetic operators
+  *   Assignment operators
+  *   etc...
+*   Operator priority
 
 ###   Conditional Statements
 
@@ -47,16 +54,19 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 ###  Loops
 
 *   `for` loops
+  *   Range based `for` loops
 *   `while` and `do-while` loops
-*   `goto` expressions
+*   `break`, `continue` and `goto` expressions
 
 ###  Functions
 
-*   Declaring Functions
-*   Functions with parameters
-*   Return values from functions
-*   Overloading Functions
-*   Optional parameters
+*   Declaring functions
+  *   Functions with parameters
+  *   Return values from functions
+  *   Optional parameters
+*   Overloading functions
+  *   Overloading operators
+*   Lambda functions
 
 ###  Arrays and `vector<T>`
 
@@ -66,18 +76,21 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
   *   One-dimensional and multi-dimentional arrays
 *   `vector<T>`
   *   Creating `vector<T>`
-  *   Adding elements
-  *   Removing elements
+  *   Adding/removing elements
 
 ###  Strings
 *   `char*` and operations
   *   `strcat`, `strcmp`, etc...
 *   `std::string` and operations
+  *   `.size`, `.substr`, etc...
 
 ###  References, pointers and memory in C++
 
-*   References
+*   References (Lvalues)
+*   Rvalues
+  *   `std::move`
 *   Pointers
+*   Smart pointers
 
 ###  C++ Classes
 
@@ -99,12 +112,13 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 *   Defining custom exceptions
 
 ### Templates
-  * Function templates
-  * Class templates
+*   Function templates
+*   Class templates
 
 ###  STL fundamentals
-  * Containers
-  * Iterators
+*   Containers
+*   Iterators
 
 ### Advanced STL
-  * Tree-like containers
+*   Tree-like containers
+*   Hash tables

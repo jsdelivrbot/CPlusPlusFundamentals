@@ -1,13 +1,13 @@
 #   Things to add to the Program
 
 *   Preprocessor presentation
-  *   Macros
-  *   pragma ...
+  *   `define`
+  *   `pragma` ...
   *   `ifdef`
   *   etc...
 *   Enum type
     *   in **Classes**
-*   const exp
+*   const, constexpr
     *   in **Data types and variables**
     *   ....
 *   `inline`
@@ -22,3 +22,5 @@
 *   typedef
 *   \__builtin
 *   Fixed-size types
+*   Pointers
+  *   `nullptr`

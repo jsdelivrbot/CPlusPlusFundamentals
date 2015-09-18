@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+
+# Node.js package folders
+node_modules/
+bower_components/
+npm-debug*.log

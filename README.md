@@ -145,8 +145,10 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 
 ###  Tree-like data structures and hash tables
 *   Tree-like data structures:
-    * **TODO**
+    *   `set`
+	*   `map`
 *   Heaps
-  * **TODO**  
+  *   **TODO**  
 *   HashTables
-    * **TODO**
+    *   `unordered_set`
+	*   `unordered_map`

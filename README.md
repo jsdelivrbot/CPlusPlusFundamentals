@@ -54,7 +54,8 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 ###  Loops
 
 *   `for` loops
-  *   Range based `for` loops
+  *   Range-based `for` loops
+  *   `for` loops for iterating collections
 *   `while` and `do-while` loops
 *   `break`, `continue` and `goto` expressions
 
@@ -83,6 +84,7 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
   *   `strcat`, `strcmp`, etc...
 *   `std::string` and operations
   *   `.size`, `.substr`, etc...
+*   Regular Expressions
 
 ###  References, pointers and memory in C++
 
@@ -102,6 +104,12 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 
 *   Inheriting classes
 *   Multiple Inheritance
+
+###   Memory Management
+*   Allocating and deallocating object
+*   Reference Counting
+*   Garbage collection support
+*   Smart pointers
 
 ###   Exceptions
 

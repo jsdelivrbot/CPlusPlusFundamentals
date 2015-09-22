@@ -1,5 +1,3 @@
-// "Copyright Telerik Academy 2015"
-
 #include <iostream>
 
 int main() {

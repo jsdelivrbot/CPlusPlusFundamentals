@@ -1,4 +1,3 @@
-// "Copyright 2015 "
 #include <iostream>
 
 int main() {

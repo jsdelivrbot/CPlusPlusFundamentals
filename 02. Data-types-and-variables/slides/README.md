@@ -41,7 +41,8 @@
 int count = 5;
 ```
 
-*   Data type <!-- .element: class="balloon fragment" style="top: 50%; left:4%" -->
+*   Data type
+  <!-- .element: class="balloon fragment" style="top: 50%; left:4%" -->
 *   Variable <!-- .element: class="balloon fragment" style="top: 63%; left:12%" -->
 *   Optional value <!-- .element: class="balloon fragment" style="top: 50%; left:30%" -->
 

@@ -142,7 +142,7 @@ cout << 5 / x << endl; // throws exception
 
 <!-- attr: {class: 'slide-section'} -->
 #   Logical Operators
-##    True or False
+##    true or false
 
 <!-- attr: {hasScriptWrapper: true} -->
 #   Logical Operators
@@ -198,16 +198,16 @@ to `true`
 ```cpp
 bool a = true;
 bool b = false;
-cout << (a && b) << endl; // False
-cout << (a || b) << endl; // True
-cout << (a ^ b) << endl; // True
-cout << (!b) << endl; // True
-cout << (b || true) << endl; // True
-cout << (b && true) << endl; // False
-cout << (a || true) << endl; // True
-cout << (a && true) << endl; // True
-cout << (!a) << endl; // False
-cout << ((5>7) ^ (a==b)) << endl; // False
+cout << (a && b) << endl; // false
+cout << (a || b) << endl; // true
+cout << (a ^ b) << endl; // true
+cout << (!b) << endl; // true
+cout << (b || true) << endl; // true
+cout << (b && true) << endl; // false
+cout << (a || true) << endl; // true
+cout << (a && true) << endl; // true
+cout << (!a) << endl; // false
+cout << ((5>7) ^ (a==b)) << endl; // false
 ```
 
 <!-- attr: {class: 'slide-section'} -->
@@ -226,11 +226,40 @@ cout << ((5>7) ^ (a==b)) << endl; // False
     *   Like `!` for boolean expressions but **bit by bit**
 *   The operators `|`, `&` and `^` behave like `||`, `&&` and `^` for boolean expressions but **bit by bit**
 *   The `<<` and `>>` **move the bits** (left or right)
-*   Behavior of the operators `|`, `&` and `^`:
 
-#   Bitwise Operators Behavior
+#   Bitwise Operators - OR
 
-*   **TODO**
+*   Much like logical OR, but bit by bit:
+  
+| Operation | Result bit |
+| :-------: | ---------- |
+| 0 **I** 0 | 0          |
+| 0 **I** 1 | 1          |
+| 1 **I** 0 | 1          |
+| 1 **I** 1 | 1          |
+
+#   Bitwise Operators - AND
+
+*   Much like logical AND, but bit by bit:
+  
+| Operation | Result bit |
+| :-------: | ---------- |
+| 0 **&** 0 | 0          |
+| 0 **&** 1 | 0          |
+| 1 **&** 0 | 0          |
+| 1 **&** 1 | 1          |
+
+
+#   Bitwise Operators - XOR
+
+*   Much like logical XOR, but bit by bit:
+  
+| Operation | Result bit |
+| :-------: | ---------- |
+| 0 **^** 0 | 0          |
+| 0 **^** 1 | 1          |
+| 1 **^** 0 | 1          |
+| 1 **^** 1 | 0          |
 
 <!-- attr: {hasScriptWrapper: true} -->
 #   Bitwise Operators Example:
@@ -251,7 +280,21 @@ cout << (a >> 1) << endl;     // 00000000 00000001
 ```
 
 <!-- attr: {class: 'slide-section'} -->
-#   Bitwise Operators
+#   Bitwise Operators OR, AND and XOR
+##    Live Demo
+
+#   Bitwise Operators - Shift left, shift right
+
+*   Bitwise shift operators (`<<` and `>>`) are performed on integer numbers
+    *   They move the bits by provided number to the left or right
+    *   _Example:_
+    
+| Operation  | Result | Explanation |
+| :--------: | ------ | ------------------------------------- |
+| 7 **<<** 2 | 28      | **0000 0111** is shifted 2 bits to the left and becomes **0001 1100** |
+| 27 **>>** 2 | 6      | **0001 1011** is shifted 2 bits to the right and becomes **0000 0110** |
+
+#   Bitwise Shift Operators
 ##    Live Demo
 
 <!-- section start -->
@@ -269,12 +312,12 @@ cout << (a >> 1) << endl;     // 00000000 00000001
 ```cpp
 int a = 5;
 int b = 4;
-cout << (a >= b) << endl; // True
-cout << (a != b) << endl; // True
-cout << (a == b) << endl; // False
-cout << (a == a) << endl; // True
-cout << (a != ++b) << endl; // False
-cout << (a > b) << endl; // False
+cout << (a >= b) << endl; // true
+cout << (a != b) << endl; // true
+cout << (a == b) << endl; // false
+cout << (a == a) << endl; // true
+cout << (a != ++b) << endl; // false
+cout << (a > b) << endl; // false
 ```
 
 <!-- attr: {class: 'slide-section'} -->

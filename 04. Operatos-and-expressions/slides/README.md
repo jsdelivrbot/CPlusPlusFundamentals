@@ -67,7 +67,7 @@
 
 <!-- attr: {class: 'slide-section', id: 'arithmetic-operators', hasScriptWrapper: true} -->
 #   Arithmetic Operators 
-##    Like math
+##    Like in math
 
 #   Arithmetic Operators
 

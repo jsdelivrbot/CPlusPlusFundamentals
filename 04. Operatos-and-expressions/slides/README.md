@@ -52,16 +52,16 @@
 
 <!-- attr: {style: 'font-size:42px'} -->
 #   Categories of Operators in C++
-
-| Category             | Operators                 |
-| -------------------- | ------------------------- |
-| Arithmetic           | `+ - * / % ++ --`         |
-| Logical              | `&& ^ !`                  |
-| Binary               | `& ^ ~ << >>`             |
-| Comparison           | `== != < > <= >=`         |
-| Assignment           | `= += -= *= /= &= ^= >>=` |
-| String concat        | `+`                       |
-| Other                | `. [] () ?: new`          |
+  
+| Category             | Operators                               |
+| -------------------- | --------------------------------------- |
+| Arithmetic           | `+` `-` `*` `/` `%` `++` `--`           |
+| Logical              | `&&` `^` `!`                            |
+| Binary               | `&` `^` `~` `<<` `>>`                   |
+| Comparison           | `==` `!=` `<` `>` `<=` `>=`             |
+| Assignment           | `=` `+=` `-=` `*=` `/=` `&=` `^=` `>>=` |
+| String concat        | `+`                                     |
+| Other                | `.` `[]` `()` `?:` `new`                |
 
 <!-- section start -->
 
@@ -80,7 +80,7 @@
 *   The `++`operator increments a variable with `1`
 
 <!-- attr: { hasScriptWrapper: true} -->
-#   Arithmetic Operators - Example
+#   Arithmetic Operators - Examples
 
 *  _Example:_ Perimeter and area of a square
 
@@ -111,27 +111,27 @@ cout << 11 / 3 << endl; // 3
 <!-- .element: style="font-size:1.1rem" -->
 
 <!-- attr: { hasScriptWrapper: true} -->
-#   Arithmetic Operators - Example
+#   Arithmetic Operators - Examples
 
 *   _Example:_ Arithmetic operators with floating-point numbers
 
 ```cpp
 cout << 11.0 / 3 << endl; // prints 3.666666667
-cout << 11 / 3.0 << endl;; // prints 3.666666667
-cout << 11 % 3 << endl;;   // prints 2
-cout << 11 % -3 << endl;;  // prints 2
-cout << -11 % 3 << endl;;  // prints -2
+cout << 11 / 3.0 << endl; // prints 3.666666667
+cout << 11 % 3 << endl;   // prints 2
+cout << 11 % -3 << endl;  // prints 2
+cout << -11 % 3 << endl;  // prints -2
 ```
 
 *   _Example:_ Arithmetic operators resulting to `inf` or `nan`
 
 ```cpp
-cout <<1.5 / 0.0<< endl;;  // prints inf
-cout <<-1.5 / 0.0<< endl;; // prints -inf
-cout <<0.0 / 0.0<< endl;;  // prints nan
+cout <<1.5 / 0.0<< endl;  // prints inf
+cout <<-1.5 / 0.0<< endl; // prints -inf
+cout <<0.0 / 0.0<< endl;  // prints nan
 
 int x = 0;
-cout << 5 / x << endl;; // throws exception
+cout << 5 / x << endl; // throws exception
 ```
 
 <!-- attr: {class: 'slide-section'} -->
@@ -146,20 +146,50 @@ cout << 5 / x << endl;; // throws exception
 
 <!-- attr: {hasScriptWrapper: true} -->
 #   Logical Operators
+
 *   Logical operators **take boolean operands** and **return boolean** result
 *   Used to create complex expressions
 *   Operator `!` turns `true` to `false` and `false`
 to `true`
-*   Behavior of the operators `&&`, `||` and `^`
-    *   (`1 == true`, `0 == false`)
 
-#   Logical Operators Behavior
+#   Logical Operators - OR
 
-| Operation | &#124 |
-| --------- | -- |
-| Operand 1 | 0  |
-| Operand 2 | 0  |
-**TODO**
+*   The result of OR is:
+    *   `true` if any of the operands is `true`
+    *   `false` if all the operands are `false`
+    
+| Operation          | Result     |
+| :----------------: | ---------- |
+| false **II** false | **false**  |
+| false **II** true  | **true**   |
+| true **II** false  | **true**   |
+| true **II** true   | **true**   |
+
+#   Logical Operators - AND
+
+*   The result of AND is:
+    *   `true` only if all of the operands are `true`
+    *   `false` if any of the operands is `false`
+    
+| Operation          | Result     |
+| :----------------: | ---------- |
+| false **&&** false | **false**  |
+| false **&&** true  | **false**  |
+| true **&&** false  | **false**  |
+| true **&&** true   | **true**   |
+    
+#   Logical Operators - XOR
+
+*   The result of XOR is:
+    *   `true` if the two operands have different values
+    *   `false` if the two operands have equal values
+    
+| Operation         | Result     |
+| :---------------: | ---------- |
+| false **^** false | **false**  |
+| false **^** true  | **true**   |
+| true **^** false  | **true**   |
+| true **^** true   | **false**  |
 
 <!-- attr: {hasScriptWrapper: true} -->
 #   Logical Operators: Example

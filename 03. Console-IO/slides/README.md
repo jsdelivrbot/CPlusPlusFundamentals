@@ -2,8 +2,8 @@
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 
-# Loops
-##  Repeatedly excute the same code
+# Data Types and Variables
+##  Numbers, strings and stuff
 <div class="signature">
     <p class="signature-course">C++ Fundamentals</p>
     <p class="signature-initiative">Telerik Algo Academy</p>
@@ -14,11 +14,18 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 
-<!-- section start -->
-<!-- attr: {id: '', class: 'slide-title'} -->
-#
-##
+*   Integer values
+    *   `int`, `long`, `short`, etc...
+*   Floating-point values
+    *   `double` and `float`
+*   Char values
+    *   `char`
+*   String values
+    * A sequence of characters
+
 
 <!-- section start -->
-<!-- attr: {id: ''} -->
-#
+
+<!-- attr: {class: 'slide-questions', id:"questions"} -->
+#   Data Types and Variables
+##    Questions

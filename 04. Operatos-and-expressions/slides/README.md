@@ -66,9 +66,8 @@
 <!-- section start -->
 
 <!-- attr: {class: 'slide-section', id: 'arithmetic-operators', hasScriptWrapper: true} -->
-#   Arithmetic Operators <!-- .element: style="margin-top: 90px" -->
-
-<img src="imgs/slide-section-arithmetic-operators.jpg" class="slide-image" style="height: 380px; position: relative; border-radius: 15px; border: 3px solid lightblue" />
+#   Arithmetic Operators 
+##    Like in math
 
 #   Arithmetic Operators
 

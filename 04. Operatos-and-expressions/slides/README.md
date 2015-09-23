@@ -2,8 +2,8 @@
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 
-#   Data Types and Variables
-##    Numbers, strings and stuff
+#   Operators and Expression
+##    Bitwise, Logical, Comparison
 <div class="signature">
     <p class="signature-course">C++ Fundamentals</p>
     <p class="signature-initiative">Telerik Algo Academy</p>
@@ -140,6 +140,159 @@ cout << 5 / x << endl;; // throws exception
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
+#   Logical Operators
+##    True or False
+
+<!-- attr: {hasScriptWrapper: true} -->
+#   Logical Operators
+*   Logical operators **take boolean operands** and **return boolean** result
+*   Used to create complex expressions
+*   Operator `!` turns `true` to `false` and `false`
+to `true`
+*   Behavior of the operators `&&`, `||` and `^`
+    *   (`1 == true`, `0 == false`)
+
+#   Logical Operators Behavior
+
+| Operation | &#124 |
+| --------- | -- |
+| Operand 1 | 0  |
+| Operand 2 | 0  |
+**TODO**
+
+<!-- attr: {hasScriptWrapper: true} -->
+#   Logical Operators: Example
+
+*   _Example_
+```cpp
+bool a = true;
+bool b = false;
+cout << (a && b) << endl; // False
+cout << (a || b) << endl; // True
+cout << (a ^ b) << endl; // True
+cout << (!b) << endl; // True
+cout << (b || true) << endl; // True
+cout << (b && true) << endl; // False
+cout << (a || true) << endl; // True
+cout << (a && true) << endl; // True
+cout << (!a) << endl; // False
+cout << ((5>7) ^ (a==b)) << endl; // False
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Logical Operators
+##    Live Demo
+
+<!-- section start -->
+
+<!-- attr: {class: 'slide-section', id: 'bitwise-operators'} -->
+#   Bitwise Operators
+##    Working with bits
+
+#   Bitwise Operators
+
+*   Bitwise operator ~ turns all 0 to 1 and all 1 to 0
+    *   Like `!` for boolean expressions but **bit by bit**
+*   The operators `|`, `&` and `^` behave like `||`, `&&` and `^` for boolean expressions but **bit by bit**
+*   The `<<` and `>>` **move the bits** (left or right)
+*   Behavior of the operators `|`, `&` and `^`:
+
+#   Bitwise Operators Behavior
+
+*   **TODO**
+
+<!-- attr: {hasScriptWrapper: true} -->
+#   Bitwise Operators Example:
+
+*   Bitwise operators are used on integer numbers (short, char, int, long, long long, etc...)
+*   Bitwise operators **are applied bit by bit**
+*   _Examples_
+
+```cpp
+int a = 3;                    // 00000000 00000011
+int b = 5;                    // 00000000 00000101
+cout << ( a | b) << endl;     // 00000000 00000111
+cout << (a & b) << endl;      // 00000000 00000001
+cout << (a ^ b) << endl;      // 00000000 00000110
+cout << (~a & b) << endl;     // 00000000 00000100
+cout << (a << 1) << endl;     // 00000000 00000110
+cout << (a >> 1) << endl;     // 00000000 00000001
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Bitwise Operators
+##    Live Demo
+
+<!-- section start -->
+
+<!-- attr: {class: 'slide-section', id: 'comparison-operators'} -->
+#   Comparison Operators
+##    Comparing values
+
+#   Comparison Operators
+
+*   Comparison operators are used to compare variables
+`==`, `<`, `>`, `>=`, `<=`, `!=`
+    *   They are the same as in math
+*   _Example:_
+```cpp
+int a = 5;
+int b = 4;
+cout << (a >= b) << endl; // True
+cout << (a != b) << endl; // True
+cout << (a == b) << endl; // False
+cout << (a == a) << endl; // True
+cout << (a != ++b) << endl; // False
+cout << (a > b) << endl; // False
+```
+
+<!-- attr: {class: 'slide-section'} -->
+#   Comparison Operators
+##    Live Demo
+
+<!-- section start -->
+
+<!-- attr: {class:'slide-section', id: 'assignment-operators'} -->
+#   Assignment Operators
+##    Assigning values
+
+#   Assignment Operators
+
+*   Assignment operators are used to **assign a value** to a variable ,
+    *   `=`, `+=`, `-=`, `|=`, ...
+*  _Example:_
+
+```cpp
+int x = 6;
+int y = 4;
+cout<<(y *= 2)<<endl; // 8
+int z = y = 3; // y=3 and z=3
+cout<<(z); // 3
+cout<<(x |= 1)<<endl; // 7
+cout<<(x += 3)<<endl; // 10
+cout<<(x /= 2)<<endl; // 5
+```
+<!-- attr: {class: 'slide-section'} -->
+#   Assignment Operators
+##    Live Demo
+
+
+<!-- attr: {class: 'slide-section', id: 'other-operators'} -->
+#   Other Operators
+##    `new`, `()`, etc...
+
+#   Other Operators
+
+*   Member access operator  `.`  is used to **access object members**
+*   Square brackets `[]` are used with **array's indexers**
+*   Parentheses `( )` are used to **override the default operator precedence**
+*   Class cast operator `(type)` is used to **cast one compatible type to another**
+*   Conditional operator `?:` returns a **value base on an bool expression**
+*   The `new` operator is used to **create new objects**
+
+<!-- section start -->
+
 <!-- attr: {class: 'slide-questions', id:"questions"} -->
-#   Data Types and Variables
+#   Operators and Expression
 ##    Questions

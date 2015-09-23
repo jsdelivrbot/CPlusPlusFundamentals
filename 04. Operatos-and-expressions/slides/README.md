@@ -338,12 +338,12 @@ cout << (a > b) << endl; // false
 ```cpp
 int x = 6;
 int y = 4;
-cout<<(y *= 2)<<endl; // 8
+cout << (y *= 2) << endl; // 8
 int z = y = 3; // y=3 and z=3
-cout<<(z); // 3
-cout<<(x |= 1)<<endl; // 7
-cout<<(x += 3)<<endl; // 10
-cout<<(x /= 2)<<endl; // 5
+cout << (z); // 3
+cout << (x |= 1) << endl; // 7
+cout << (x += 3) << endl; // 10
+cout << (x /= 2) << endl; // 5
 ```
 <!-- attr: {class: 'slide-section'} -->
 #   Assignment Operators

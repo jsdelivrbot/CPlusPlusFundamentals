@@ -139,7 +139,7 @@ cout << 5 / x << endl; // throws exception
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Arithmetic Operators -->
-##    Demo
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/1.%20arithmetic-operators.cpp)
 
 <!-- section start -->
 
@@ -215,7 +215,7 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Logical Operators -->
-##    Demo
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/2.%20logical-operators.cpp)
 
 <!-- section start -->
 
@@ -287,7 +287,7 @@ cout << (a >> 1) << endl;     // 00000000 00000001
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Bitwise OR, AND and XOR -->
-##    Demo
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/3.%20bitwise-operators.cpp)
 
 #   Bitwise Shift left and shift right
 
@@ -302,7 +302,7 @@ cout << (a >> 1) << endl;     // 00000000 00000001
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Bitwise Shift Operators -->
-##    Demo
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/4.%20bitwise-shift.cpp)
 
 <!-- section start -->
 
@@ -329,7 +329,7 @@ cout << (a > b) << endl; // false
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Comparison Operators -->
-##    Demo
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/5.%20comparisson-operators.cpp)
 
 <!-- section start -->
 

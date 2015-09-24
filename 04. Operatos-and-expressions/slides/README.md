@@ -1,7 +1,6 @@
 <!-- section start -->
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
-
 #   Operators and Expression
 ##    Bitwise, Logical, Comparison
 <div class="signature">
@@ -27,10 +26,9 @@
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: 'operators'} -->
-#   Operators in C++
-##    Arithmetic, Logical, Comparison, Assignment, etc...
-
+<!-- attr: {class: 'slide-section', id: 'operators', showInPresentation: true} -->
+<!-- #   Operators in C++
+##    Arithmetic, Logical, Comparison, Assignment, etc... -->
 
 #   What is an Operator?
 
@@ -65,9 +63,9 @@
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: 'arithmetic-operators', hasScriptWrapper: true} -->
-#   Arithmetic Operators 
-##    Like in math
+<!-- attr: {class: 'slide-section', id: 'arithmetic-operators', hasScriptWrapper: true, showInPresentation: true} -->
+<!-- #   Arithmetic Operators 
+##    Like in math -->
 
 #   Arithmetic Operators
 
@@ -109,8 +107,8 @@ cout << 11 / 3 << endl; // 3
 ```
 <!-- .element: style="font-size:1.1rem" -->
 
-<!-- attr: { hasScriptWrapper: true} -->
-#   Arithmetic Operators - Examples
+<!-- attr: { hasScriptWrapper: true, showInPresentation: true} -->
+<!-- #   Arithmetic Operators - Examples -->
 
 *   _Example:_ Arithmetic operators with floating-point numbers
 
@@ -133,15 +131,15 @@ int x = 0;
 cout << 5 / x << endl; // throws exception
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Arithmetic Operators
-##    Live Demo
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Arithmetic Operators -->
+##    Demo
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   Logical Operators
-##    true or false
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Logical Operators
+##    true or false -->
 
 <!-- attr: {hasScriptWrapper: true} -->
 #   Logical Operators
@@ -209,15 +207,15 @@ cout << (!a) << endl; // false
 cout << ((5>7) ^ (a==b)) << endl; // false
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Logical Operators
-##    Live Demo
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Logical Operators -->
+##    Demo
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: 'bitwise-operators'} -->
-#   Bitwise Operators
-##    Working with bits
+<!-- attr: {class: 'slide-section', id: 'bitwise-operators', showInPresentation: true} -->
+<!-- #   Bitwise Operators
+##    Working with bits -->
 
 #   Bitwise Operators
 
@@ -278,9 +276,9 @@ cout << (a << 1) << endl;     // 00000000 00000110
 cout << (a >> 1) << endl;     // 00000000 00000001
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Bitwise Operators OR, AND and XOR
-##    Live Demo
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Bitwise Operators OR, AND and XOR -->
+##    Demo
 
 #   Bitwise Operators - Shift left, shift right
 
@@ -293,14 +291,15 @@ cout << (a >> 1) << endl;     // 00000000 00000001
 | 7 **<<** 2 | 28      | **0000 0111** is shifted 2 bits to the left and becomes **0001 1100** |
 | 27 **>>** 2 | 6      | **0001 1011** is shifted 2 bits to the right and becomes **0000 0110** |
 
-#   Bitwise Shift Operators
-##    Live Demo
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Bitwise Shift Operators -->
+##    Demo
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: 'comparison-operators'} -->
-#   Comparison Operators
-##    Comparing values
+<!-- attr: {class: 'slide-section', id: 'comparison-operators', showInPresentation: true} -->
+<!-- #   Comparison Operators
+##    Comparing values -->
 
 #   Comparison Operators
 
@@ -319,15 +318,15 @@ cout << (a != ++b) << endl; // false
 cout << (a > b) << endl; // false
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-#   Comparison Operators
-##    Live Demo
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Comparison Operators -->
+##    Demo
 
 <!-- section start -->
 
-<!-- attr: {class:'slide-section', id: 'assignment-operators'} -->
-#   Assignment Operators
-##    Assigning values
+<!-- attr: {class:'slide-section', id: 'assignment-operators', showInPresentation: true} -->
+<!-- #   Assignment Operators
+##    Assigning values -->
 
 #   Assignment Operators
 
@@ -345,14 +344,14 @@ cout << (x |= 1) << endl; // 7
 cout << (x += 3) << endl; // 10
 cout << (x /= 2) << endl; // 5
 ```
-<!-- attr: {class: 'slide-section'} -->
-#   Assignment Operators
-##    Live Demo
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   Assignment Operators -->
+##    Demo
 
 
-<!-- attr: {class: 'slide-section', id: 'other-operators'} -->
-#   Other Operators
-##    `new`, `()`, etc...
+<!-- attr: {class: 'slide-section', id: 'other-operators', showInPresentation: true} -->
+<!-- #   Other Operators
+##    `new`, `()`, etc... -->
 
 #   Other Operators
 

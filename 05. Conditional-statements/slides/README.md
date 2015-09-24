@@ -74,7 +74,7 @@ cout << "The greater number is: " << biggerNumber << endl;
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `if` Statement -->
-##    [Demo](http://)
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/1.%20the-if-statement.cpp)
 
 <!-- section start -->
 
@@ -118,7 +118,7 @@ if (number % 2 == 0) {
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `if-else` Statement -->
-##  [Demo](http://)
+##  [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/2.%20the-if-else-statement.cpp)
 
 <!-- section start -->
 
@@ -165,7 +165,7 @@ if (first == second) {
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Nested `if-else` Statements -->
-##   [Demo](http://)
+##   [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/3.%20nested-if-else-statements.cpp)
 
 #   Nested if – Good Practices
 
@@ -218,7 +218,7 @@ else {
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `if-else-if` Statement -->
-##    [Demo](http://)
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/4.%20the-if-else-if-statement.cpp)
 
 <!-- section start -->
 
@@ -257,7 +257,7 @@ switch (day) {
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `switch-case` Statement -->
-##    [Demo](http://)
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/5.%20switch-case-statement.cpp)
 
 #   Good Practices using `switch-case`
 

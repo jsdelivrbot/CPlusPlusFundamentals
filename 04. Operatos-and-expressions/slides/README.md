@@ -85,12 +85,14 @@
 int squarePerimeter = 17;
 double squareSide = squarePerimeter / 4.0;
 double squareArea = squareSide * squareSide;
+
 cout << squareSide << endl; //prints 4.25
 
 cout << squareArea << endl; // prints 18.0625
 ```
-<!-- .element: style="font-size:1.05rem" -->
 
+<!-- attr: { hasScriptWrapper: true, showInPresentation: true} -->
+<!-- #   Arithmetic Operators - Examples -->
 *   _Example:_ Arithmetic operators with integer numbers
 
 ```cpp
@@ -105,7 +107,6 @@ cout << a + b << endl; // prints 11
 cout << 12 / 3 << endl; // 4
 cout << 11 / 3 << endl; // 3
 ```
-<!-- .element: style="font-size:1.1rem" -->
 
 <!-- attr: { hasScriptWrapper: true, showInPresentation: true} -->
 <!-- #   Arithmetic Operators - Examples -->
@@ -115,17 +116,22 @@ cout << 11 / 3 << endl; // 3
 ```cpp
 cout << 11.0 / 3 << endl; // prints 3.666666667
 cout << 11 / 3.0 << endl; // prints 3.666666667
+
 cout << 11 % 3 << endl;   // prints 2
 cout << 11 % -3 << endl;  // prints 2
 cout << -11 % 3 << endl;  // prints -2
 ```
 
+<!-- attr: { hasScriptWrapper: true, showInPresentation: true} -->
+<!-- #   Arithmetic Operators - Examples -->
 *   _Example:_ Arithmetic operators resulting to `inf` or `nan`
 
 ```cpp
-cout <<1.5 / 0.0<< endl;  // prints inf
-cout <<-1.5 / 0.0<< endl; // prints -inf
-cout <<0.0 / 0.0<< endl;  // prints nan
+cout << 1.5 / 0.0 << endl;  // prints inf
+cout << -1.5 / 0.0 << endl; // prints -inf
+cout << 0.0 / 0.0 << endl;  // prints nan
+
+cout << 5 / 0 << endl; // compile error
 
 int x = 0;
 cout << 5 / x << endl; // throws exception
@@ -149,7 +155,7 @@ cout << 5 / x << endl; // throws exception
 *   Operator `!` turns `true` to `false` and `false`
 to `true`
 
-#   Logical Operators - OR
+#   Logical OR
 
 *   The result of OR is:
     *   `true` if any of the operands is `true`
@@ -162,7 +168,7 @@ to `true`
 | true **II** false  | **true**   |
 | true **II** true   | **true**   |
 
-#   Logical Operators - AND
+#   Logical AND
 
 *   The result of AND is:
     *   `true` only if all of the operands are `true`
@@ -175,7 +181,7 @@ to `true`
 | true **&&** false  | **false**  |
 | true **&&** true   | **true**   |
     
-#   Logical Operators - XOR
+#   Logical XOR
 
 *   The result of XOR is:
     *   `true` if the two operands have different values
@@ -218,13 +224,16 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 ##    Working with bits -->
 
 #   Bitwise Operators
-
-*   Bitwise operator ~ turns all 0 to 1 and all 1 to 0
+*   Bitwise operators are used only on integers
+    *   They lookup/change the bits
+    *   `~`, `&`, `|`, `>>` and `<<`
+*   Bitwise operator `~` turns all bites with value 0 to bites with value 1 
+    *   And all bites with value 1 to bites with value 0
     *   Like `!` for boolean expressions but **bit by bit**
 *   The operators `|`, `&` and `^` behave like `||`, `&&` and `^` for boolean expressions but **bit by bit**
 *   The `<<` and `>>` **move the bits** (left or right)
 
-#   Bitwise Operators - OR
+#   Bitwise OR
 
 *   Much like logical OR, but bit by bit:
   
@@ -235,7 +244,7 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 | 1 **I** 0 | 1          |
 | 1 **I** 1 | 1          |
 
-#   Bitwise Operators - AND
+#   Bitwise AND
 
 *   Much like logical AND, but bit by bit:
   
@@ -247,7 +256,7 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 | 1 **&** 1 | 1          |
 
 
-#   Bitwise Operators - XOR
+#   Bitwise XOR
 
 *   Much like logical XOR, but bit by bit:
   
@@ -268,7 +277,7 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 ```cpp
 int a = 3;                    // 00000000 00000011
 int b = 5;                    // 00000000 00000101
-cout << ( a | b) << endl;     // 00000000 00000111
+cout << (a | b) << endl;      // 00000000 00000111
 cout << (a & b) << endl;      // 00000000 00000001
 cout << (a ^ b) << endl;      // 00000000 00000110
 cout << (~a & b) << endl;     // 00000000 00000100
@@ -277,19 +286,19 @@ cout << (a >> 1) << endl;     // 00000000 00000001
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
-<!-- #   Bitwise Operators OR, AND and XOR -->
+<!-- #   Bitwise OR, AND and XOR -->
 ##    Demo
 
-#   Bitwise Operators - Shift left, shift right
+#   Bitwise Shift left and shift right
 
 *   Bitwise shift operators (`<<` and `>>`) are performed on integer numbers
-    *   They move the bits by provided number to the left or right
-    *   _Example:_
+    *   They move the bits by the provided number to the left or right
+*   _Example:_
     
-| Operation  | Result | Explanation |
-| :--------: | ------ | ------------------------------------- |
-| 7 **<<** 2 | 28      | **0000 0111** is shifted 2 bits to the left and becomes **0001 1100** |
-| 27 **>>** 2 | 6      | **0001 1011** is shifted 2 bits to the right and becomes **0000 0110** |
+| Op          | Res    | Explanation |
+| :---------: | ------ | ----------------------------------- |
+| 7 **<<** 2  | 28     | **0000 0111** becomes **0001 1100** |
+| 27 **>>** 2 | 6      | **0001 1011** becomes **0000 0110** | <!-- .element: style="font-size:45px" -->
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Bitwise Shift Operators -->
@@ -355,12 +364,12 @@ cout << (x /= 2) << endl; // 5
 
 #   Other Operators
 
-*   Member access operator  `.`  is used to **access object members**
-*   Square brackets `[]` are used with **array's indexers**
+*   With  `.` **access object members**
+*   With `[]` use **array's indexers**
 *   Parentheses `( )` are used to **override the default operator precedence**
 *   Class cast operator `(type)` is used to **cast one compatible type to another**
 *   Conditional operator `?:` returns a **value base on an bool expression**
-*   The `new` operator is used to **create new objects**
+*   With the `new` operator **create new objects**
 
 <!-- section start -->
 

@@ -355,7 +355,7 @@ cout << (x /= 2) << endl; // 5
 ```
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Assignment Operators -->
-##    Demo
+##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/04.%20Operatos-and-expressions/demos/6.%20assignment-operators.cpp)
 
 <!-- attr: {class: 'slide-section', id: 'other-operators', showInPresentation: true} -->
 <!-- #   Other Operators

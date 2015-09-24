@@ -222,6 +222,53 @@ else {
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section', id: 'switch-case', showInPresentation: true} -->
+<!-- #   The `switch-case` Statement
+##    Make Many Comparisons at Once -->
+
+#   The `switch-case` Statement
+
+*   The `switch-case` statement **selects for execution a statement from a list** depending on the value of the switch expression 
+
+```cpp
+int day;
+cin >> day;
+
+switch (day) {
+  case 1: cout << "Monday" << endl; break;
+  case 2: cout << "Tuesday" << endl; break;
+  case 3: cout << "Wednesday" << endl; break;
+  case 4: cout << "Thursday" << endl; break;
+  case 5: cout << "Friday" << endl; break;
+  case 6: cout << "Saturday" << endl; break;
+  case 7: cout << "Sunday" << endl; break;
+  default: cout << "Error!" << endl; break;
+}
+```
+
+#   How `switch-case` Works?
+
+1.  The expression is evaluated
+2.  When one of the constants specified in a case label is equal to the expression
+    *   The statement that corresponds to that case is executed
+3.  If no case is equal to the expression
+    *   If there is default case, it is executed
+    *   Otherwise the control is transferred to the end point of the switch statement 
+
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   The `switch-case` Statement -->
+##    [Demo](http://)
+
+#   Good Practices using `switch-case`
+
+*   There must be a separate case for every normal situation
+*   Put the normal case first
+    *   Put the most frequently executed cases first and the least frequently executed last
+*     Order cases alphabetically or numerically
+*   In default use case that cannot be reached under normal circumstances
+
+<!-- section start -->
+
 <!-- attr: {class: 'slide-questions', id:"questions"} -->
 #   Conditional Statements
 ##    Questions

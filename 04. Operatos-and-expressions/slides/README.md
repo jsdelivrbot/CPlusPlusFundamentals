@@ -357,7 +357,6 @@ cout << (x /= 2) << endl; // 5
 <!-- #   Assignment Operators -->
 ##    Demo
 
-
 <!-- attr: {class: 'slide-section', id: 'other-operators', showInPresentation: true} -->
 <!-- #   Other Operators
 ##    `new`, `()`, etc... -->

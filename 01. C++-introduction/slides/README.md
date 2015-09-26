@@ -1,7 +1,6 @@
 <!-- section start -->
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
-
 #   C++ Introduction
 ##    What is C++, Features, Compilers, IDEs
 <div class="signature">
@@ -27,10 +26,10 @@
     *   C libs, OOP, Templates, Exceptions, Overloads
 
 <!-- section start -->
-<!-- attr: {id: 'what-is-cpp', class: 'slide-section'} -->
-#   What is C++?
-##    Fast, Mid-level, Multi-paradigm Language
 
+<!-- attr: {id: 'what-is-cpp', class: 'slide-section', showInPresentation: true} -->
+<!-- #   What is C++?
+##    Fast, Mid-level, Multi-paradigm Language -->
 
 #   What is C++?
 
@@ -42,9 +41,8 @@
     *   All data is in **predefined forms** (data types)
     *   Data is represented in variables of data types
     *   A variable is of only 1 data type through its lifespan
-
-#   What is C++ (cont.)?
-
+<!-- attr: {showInPresentation: true} -->
+<!-- #   What is C++ (cont.)? -->
 *   Multi-paradigm
     *   Supports **procedural programming** (as in C)
     *   Supports **object-oriented** programming
@@ -86,9 +84,9 @@
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: 'cpp-program-structure'} -->
-#   C++ Program Structure
-##   Entry point, including libraries, termination
+<!-- attr: {class: 'slide-section', id: 'cpp-program-structure', showInPresentation: true} -->
+<!-- #   C++ Program Structure
+##   Entry point, including libraries, termination -->
 
 #   C++ Program Structure
 *   Program entry point
@@ -126,15 +124,15 @@ int main(int argc, char * argv[]) {
 *   Print to the console <!-- .element: class="balloon" style="top: 35%; left:45%" -->
 *   For main 0 means everything went OK, terminating normally <!-- .element: class="balloon" style="top: 35%; left:45%" -->
 
-<!-- attr: {class: 'slide-section'} -->
-#   C++ Hello World Example
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   C++ Hello World Example -->
 ##  Live Demo
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: 'cpp-ides-compilers'} -->
-#   C++ IDEs, Editors and Compilers
-##  Compiling code, Integrated Development Environments
+<!-- attr: {class: 'slide-section', id: 'cpp-ides-compilers', showInPresentation: true} -->
+<!-- #   C++ IDEs, Editors and Compilers
+##  Compiling code, Integrated Development Environments -->
 
 #   C++ Compilers
 
@@ -149,7 +147,7 @@ There are lots of C++ compilers
     *   Bjarne Stroustrup’s advice on picking an IDE and compiler: http://stroustrup.com/compilers.html
 
 <!-- attr: {id: 'code-blocks'}  -->
-#  C++ IDEs: Code::Blocks
+#  Code::Blocks
 
 *     **Code::Blocks** - free C & C++ IDE
     *   Used in International Olympiad in Informatics
@@ -159,12 +157,12 @@ There are lots of C++ compilers
     *   Can compile single `.cpp` file
     *   Can be usedfor bigger projects with many files, references, etc...
 
-<!-- attr: {class:'slide-section'} -->
-#   Code::Blocks
-##    Live Demo
+<!-- attr: {class:'slide-section', showInPresentation: true} -->
+<!-- #   Code::Blocks
+##    Live Demo -->
 
 <!-- attr: {id: 'visual-studio'}  -->
-# C++ IDEs: Visual Studio
+# Visual Studio
 
 *     **Visual Studio** – proprietary IDE for MS stack
     *   Supports latest C++ standards
@@ -174,12 +172,13 @@ There are lots of C++ compilers
     *   For different platforms (.NET CF, Silverlight, …)
     *   Full integration of most development activities (coding, compiling, testing, debugging, deployment, version control, ...)
 
-<!-- attr: {class:'slide-section'} -->
-#   Visual Studio
+<!-- attr: {class:'slide-section', showInPresentation: true} -->
+<!-- #   Visual Studio
 ##    Live Demo
-
+ -->
 <!-- attr: {id: 'vim'}  -->
-# Editors: VIM
+# VIM
+
 * **VIM** (Vi IMproved)
 	* CLI and GUI mode (gVim)
 	* Highly configurable
@@ -188,16 +187,15 @@ There are lots of C++ compilers
 		* Not just programming
 	* Tool, the use of which must be learned
 
-<!-- attr: {class: 'slide-section'} -->
-#   VIM
-##    Live Demo
+<!-- attr: {class: 'slide-section', showInPresentation: true} -->
+<!-- #   VIM
+##    Live Demo -->
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-section', id: 'cpp-features'} -->
-# C++ Features
-##  Notable C++ Features, Supported in all Standards
-
+<!-- attr: {class: 'slide-section', id: 'cpp-features', showInPresentation: true} -->
+<!-- # C++ Features
+##  Notable C++ Features, Supported in all Standards -->
 
 # C++ Features
 
@@ -209,17 +207,15 @@ There are lots of C++ compilers
     *   Static allocation (compile-time, stack)
   *   Auto allocation (stack)
   *   Dynamic allocation (`new`, `delete`, heap)
-
-# C++ Features
-
+<!-- attr: {showInPresentation: true} -->
+<!-- # C++ Features -->
 *   Classes & Objects
     *   Support for all OOP principles:
         *   inheritance, polymorphism, encapsulation, abstraction, virtuals
 *   Templates
     *   Support for generic classes and methods
-
-# C++ Features
-
+<!-- attr: {showInPresentation: true} -->
+<!-- # C++ Features -->
 *   Standard Library
     *   Set of libraries, data structures and algorithms
     *   Largely based on the [STL](https://en.wikipedia.org/wiki/Standard_Template_Library)
@@ -231,6 +227,5 @@ There are lots of C++ compilers
 <!-- section start -->
 
 <!-- attr: {id: 'questions', class:'slide-questions'} -->
-
 # Introduction to C++
 ##  Questions

@@ -4,7 +4,7 @@
 #   Conditional Statements
 ##    Become master jedi of control flow
 <div class="signature">
-    <p class="signature-course">C++ Fundamentals</p>
+    <p class="signature-course">Java Fundamentals</p>
     <p class="signature-initiative">Telerik Algo Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -30,7 +30,7 @@
 *   Branch to different parts of the code depending on the result
 *   The simplest form of an if statement:
 
-```cpp
+```java
 if (condition) {
     statements;
 }
@@ -41,40 +41,39 @@ if (condition) {
     *   **Boolean** variable
     *   **Boolean logical expression**
     *   **Comparison** expression
-*   The condition can be of **any type**
-    *   Everything is TRUE, except for 0 and FALSE
 *   The statement can be:
     *   **Single statement** ending with a semicolon
-    *   **Block enclosed in braces** 
+    *   **Block enclosed in braces**
 
 #   How `if` works?
 
 *   **TODO** insert image
 *   The **condition is evaluated**
     *   If it is `true`, the statement is **executed**
-    *   If it is `false`, the statement is **skipped** 
+    *   If it is `false`, the statement is **skipped**
 
 #   _Example:_ `if`
 
 *   Find the bigger between two numbers:
 
-```cpp
-cout << "Enter two numbers:" << endl;
+```java
+var scanner = new Scanner(System.in);
 
-int biggerNumber;
-int smallerNumber;
-cin >> biggerNumber >> smallerNumber;
+System.out.println("Enter two numbers:");
+
+int biggerNumber = scanner.nextInt();
+int smallerNumber = scanner.nextInt();
 
 if (smallerNumber > biggerNumber) {
     biggerNumber = smallerNumber;
 }
 
-cout << "The greater number is: " << biggerNumber << endl;
+System.out.println("The greater number is: " + biggerNumber);
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `if` Statement -->
-##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/1.%20the-if-statement.cpp)
+##    [Demo](http)
 
 <!-- section start -->
 
@@ -84,14 +83,14 @@ cout << "The greater number is: " << biggerNumber << endl;
 
 #   The `if-else` Statement
 *   The `if-else` statement is more complex and useful
-    *   Executes one branch if the condition is true, and another if it is false 
+    *   Executes one branch if the condition is true, and another if it is false
 *   The simplest form of an `if-else` statement:
 
-```cpp
+```java
 if (expression) {
-    statement1; 
+    statement1;
 } else {
-    statement2; 
+    statement2;
 }
 ```
 
@@ -105,20 +104,19 @@ if (expression) {
 
 *   _Example:_ Check if a number if it is odd or even
 
-```cpp
-int number;
-cin >> number;
+```java
+int number = scanner.nextInt();
 
 if (number % 2 == 0) {
-    cout << "This number is even!" << endl;
+    System.out.println("This number is even!");
 } else {
-    cout << "This number is odd!" << endl;
+    System.out.println("This number is odd!");
 }
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `if-else` Statement -->
-##  [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/2.%20the-if-else-statement.cpp)
+##  [Demo](http)
 
 <!-- section start -->
 
@@ -132,8 +130,8 @@ if (number % 2 == 0) {
 *   `if` and `if-else` statements can be nested
     *   i.e. **used inside** another `if` or `else` statement
     *   Every `else` corresponds to **its closest preceding** `if`
-    
-```cpp
+
+```java
 if (expression) {
     if (expression)  {
         statement;
@@ -142,30 +140,30 @@ if (expression) {
     }
 } else {
     statement;
-} 
+}
 ```
-    
-#   _Example:_ Nested if Statements
-*   _Example:_ comparing two integers: 
 
-```cpp
-int first, second;
-cin >> first >> second;
+#   _Example:_ Nested if Statements
+*   _Example:_ comparing two integers:
+
+```java
+int first = scanner.nextInt();
+int second = scanner.nextInt();
 
 if (first == second) {
-    cout << "These two numbers are equal." << endl;
+    System.out.println("These two numbers are equal.");
 } else {
     if (first > second) {
-        cout << "The first number is bigger." << endl;
+        System.out.println("The first number is bigger.");
     } else {
-        cout << "The second is bigger." << endl;
+        System.out.println("The second is bigger.");
     }
 }
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   Nested `if-else` Statements -->
-##   [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/3.%20nested-if-else-statements.cpp)
+##   [Demo](http)
 
 #   Nested if – Good Practices
 
@@ -183,10 +181,10 @@ if (first == second) {
 ##  Make more than two branches -->
 
 #   The `if-else-if` Statement
-*   C++ supports evaluating more than one `if` statements
+*   Java supports evaluating more than one `if` statements
     *   If the first `if` statement is `false`, evaluate the second `if` statement, etc..
-    
-```cpp
+
+```java
 if(condition1) {
   statement1;
 } else if(condition2){
@@ -202,23 +200,23 @@ if(condition1) {
 
 *   _Example:_ Check if a Latin leter is a **vowel** or **consonant**
 
-```cpp
+```java
 int ch = 'X';
 if (ch == 'A' || ch == 'a') {
-    cout << "Vowel [ei]" << endl;
+    System.out.println("Vowel [ei]");
 }
 else if (ch == 'E' || ch == 'e') {
-    cout << "Vowel [i:]" << endl;
+    System.out.println("Vowel [i:]");
 }
 else if  …
 else {
-  cout << "The Consonant [" << ch << "] << endl;  
+  System.out.println("The Consonant [" +  ch + "]");  
 }
 ```
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `if-else-if` Statement -->
-##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/4.%20the-if-else-if-statement.cpp)
+##    [Demo](http)
 
 <!-- section start -->
 
@@ -228,21 +226,20 @@ else {
 
 #   The `switch-case` Statement
 
-*   The `switch-case` statement **selects for execution a statement from a list** depending on the value of the switch expression 
+*   The `switch-case` statement **selects for execution a statement from a list** depending on the value of the switch expression
 
-```cpp
-int day;
-cin >> day;
+```java
+int day = scanner.nextInt();
 
 switch (day) {
-  case 1: cout << "Monday" << endl; break;
-  case 2: cout << "Tuesday" << endl; break;
-  case 3: cout << "Wednesday" << endl; break;
-  case 4: cout << "Thursday" << endl; break;
-  case 5: cout << "Friday" << endl; break;
-  case 6: cout << "Saturday" << endl; break;
-  case 7: cout << "Sunday" << endl; break;
-  default: cout << "Error!" << endl; break;
+  case 1: System.out.println("Monday"); break;
+  case 2: System.out.println("Tuesday"); break;
+  case 3: System.out.println("Wednesday"); break;
+  case 4: System.out.println("Thursday"); break;
+  case 5: System.out.println("Friday"); break;
+  case 6: System.out.println("Saturday"); break;
+  case 7: System.out.println("Sunday"); break;
+  default: System.out.println("Error!"); break;
 }
 ```
 
@@ -253,22 +250,22 @@ switch (day) {
     *   The statement that corresponds to that case is executed
 3.  If no case is equal to the expression
     *   If there is default case, it is executed
-    *   Otherwise the control is transferred to the end point of the switch statement 
+    *   Otherwise the control is transferred to the end point of the switch statement
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
 <!-- #   The `switch-case` Statement -->
-##    [Demo](https://github.com/TelerikAcademy/CPlusPlusFundamentals/blob/master/05.%20Conditional-statements/demos/5.%20switch-case-statement.cpp)
+##    [Demo](http)
 
 #   Good Practices using `switch-case`
 
 *   There must be a separate case for every normal situation
 *   Put the normal case first
     *   Put the most frequently executed cases first and the least frequently executed last
-*     Order cases alphabetically or numerically
+*   Order cases alphabetically or numerically
 *   In default use case that cannot be reached under normal circumstances
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-questions', id:"questions"} -->
-#   Conditional Statements
+<!-- attr: {class: 'slide-questions', id:"questions", showInPresentation: true} -->
+<!-- #   Conditional Statements -->
 ##    Questions

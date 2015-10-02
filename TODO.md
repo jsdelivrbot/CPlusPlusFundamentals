@@ -1,26 +1,29 @@
 #   Things to add to the Program
 
-*   Preprocessor presentation
-  *   `define`
-  *   `pragma` ...
-  *   `ifdef`
-  *   etc...
-*   Enum type
+*   \__builtin
+
+##  Done
+
+*   ~~Preprocessor presentation~~
+    *   `define`
+    *   `pragma` ...
+    *   `ifdef`
+    *   etc...
+*   ~~Enum type~~
     *   in **Classes**
-*   const, constexpr
+*   ~~const, constexpr~~
     *   in **Data types and variables**
     *   ....
-*   `inline`
+*   ~~`inline`~~
     *   In functions
-*   `static`
+*   ~~`static`~~
     *   In Classes
     *   In Functions
     *   in 'global' scope
-*   Add structures and unions
-*   namespaces
-*   using
-*   typedef
-*   \__builtin
-*   Fixed-size types
-*   Pointers
-  *   `nullptr`
+*   ~~`typedef`~~
+*   ~~Add structures and unions~~
+*   ~~namespaces~~
+*   ~~using~~
+*   ~~Fixed-size types~~
+*   ~~Pointers~~
+    *   `nullptr`

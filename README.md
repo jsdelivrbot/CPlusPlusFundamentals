@@ -154,8 +154,9 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 *		Containers
 	*		`vector<T>`
 *		Iterators
-	*		**TODO**
-	*		Random-access
+	*		Forward iterators
+	*		Bidirectional iterators
+	*		Random-access iterators
 
 ###   STL Algorithms
 *		Sorting

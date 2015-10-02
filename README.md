@@ -75,7 +75,6 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 
 ###		`const` expressions
 
-
 ###   Arrays and `vector<T>`
 
 *		Arrays
@@ -124,8 +123,6 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 *		Virtual methods
 
 ###		`typedef`
-
-
 
 ###		Namespaces and using directives
 *		Using Namespaces

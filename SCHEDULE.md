@@ -6,8 +6,8 @@
 | C++ introduction                        | Oct
 | Data types and variables                | Oct
 | Console IO                              | Oct
-| Operators and expressions               | Nov
-| Conditional Statements                  | Nov
+| Operators and expressions               | Oct
+| Conditional Statements                  | Octr
 | Loops                                   | Nov
 | Functions                               | Dec
 | Arrays & `vector<T>`                    | Dec

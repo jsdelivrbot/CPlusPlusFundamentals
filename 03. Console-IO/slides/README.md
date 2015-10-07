@@ -2,8 +2,8 @@
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 
-# Data Types and Variables
-##  Numbers, strings and stuff
+#   Input and Output in C++
+##  Standard input/output, Streams, Files
 <div class="signature">
     <p class="signature-course">C++ Fundamentals</p>
     <p class="signature-initiative">Telerik Algo Academy</p>
@@ -14,18 +14,27 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 
-*   Integer values
-    *   `int`, `long`, `short`, etc...
-*   Floating-point values
-    *   `double` and `float`
-*   Char values
-    *   `char`
-*   String values
-    * A sequence of characters
-
+*   Using standard I/O with **C++**
+    *   `std::cout` for reading
+    *   `std::cin` for printing
+    *   Printing and reading different data types
+    *   Printing to formatting strings
+        *   Using `ostringstream`
+*   **C-style** standard I/O
+    *   `printf()` for printing
+    *   `scanf()` for reading
+    *   Printing to formatting strings
+        *   Using `fscanf()`
+*   Formatting strings
+*   Streams in C++
+    *   What is a **stream**?
+    *   Creating and using file streams
+        *   `ifstream` and `ofstream`
+*   Optimizations and buffers
+*   Redirecting the standard I/O
 
 <!-- section start -->
 
 <!-- attr: {class: 'slide-questions', id:"questions"} -->
-#   Data Types and Variables
+#   Input and Output in C++
 ##    Questions

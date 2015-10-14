@@ -77,9 +77,9 @@ int count = 5;
 #   Integer Number Types
 
 *   Integer Number types:
-*   Represent whole numbers
-*   May be signed or unsigned
-*   Have range of values, depending on the size of memory used
+  *   Represent whole numbers
+  *   May be signed or unsigned
+  *   Have range of values, depending on the size of memory used
 
 <!-- attr: {style: 'font-size:38px'} -->
 #   Memory for Integer Number Types

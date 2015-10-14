@@ -70,8 +70,6 @@
         cin >> age;
         ```
 
-
-
 <!-- attr: {class: 'slide-questions', id:"questions"} -->
 #   Input and Output in C++
 ##    Questions

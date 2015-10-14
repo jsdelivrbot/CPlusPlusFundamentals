@@ -161,8 +161,10 @@ The **C++ Fundamentals** course aims to cover the fundamentals about using and c
 ###   STL Algorithms
 *		Sorting
 *		Searching
+		*		Binary search, lower/upper bound
 *		Random
-*		**TODO**
+*		Heap
+		*		make_heap(), push_heap()
 
 ###   Linear Data Structures STL
 *		Linear data structures

@@ -110,8 +110,6 @@ std::cout << " = " << sum << '\n';
 *   _Example:_ Checking whether a number is prime or not:
 
 ```cpp
-std::cout << "Enter a positive integer number: ";
-
 int number;
 std::cin >> number;
 
@@ -124,12 +122,14 @@ while (prime && (divider <= maxDivider)) {
     }
     divider++;
 }
-std::cout << number << "is " << prime?"":" not" << " prime" << '\n'
+std::cout << number << "is " << prime ? "" : " not" << " prime" << '\n'
 ```
 
 <!-- attr: { class: 'slide-section'} -->
 #   Checking Whether a Number Is Prime
 ##  [Demo](http://)
+
+<!-- section start -->
 
 <!-- attr: { class: 'slide-section'} -->
 #   Loop operators
@@ -141,7 +141,8 @@ std::cout << number << "is " << prime?"":" not" << " prime" << '\n'
 *   _Example:_ Calculate `N! = 1*2*3*....*(N-1)*N`
 
 ```cpp
-int n = scanner.nextInt();
+int n;
+std::cin >> n;
 
 int result = 1;
 while (true) {
@@ -152,7 +153,7 @@ while (true) {
     result *= n;
     --n;
 }
-System.out.println("n! = " + result);
+cout << "n! = " << result << '\n';
 ```
 
 <!-- attr: { class: 'slide-section'} -->
@@ -186,7 +187,7 @@ do {
 *   The block schema of a do-while loop:
 
 <div style="text-align: center">
-  <img src="imgs/example-do-while-block-schema.png" style="border:none; background: none;"/>
+  <img src="imgs/example-do-while-block-schema.png" style="border:none; background: none; width:60%"/>
 </div>
 
 <!-- attr: { class: 'slide-section'} -->
@@ -198,8 +199,8 @@ do {
 *   _Example:_ Calculating N factorial (N!)
 
 ```cpp
-String numberAsString = scanner.next();
-int n = scanner.nextInt();
+int n;
+std::cin >> n;
 int factorial = 1;
 
 do {
@@ -207,7 +208,7 @@ do {
   --n;
 } while (n > 0);
 
-System.out.println("n! = " + factorial);
+std::cout << "n! = " << factorial << '\n';
 ```
 
 <!-- attr: { class: 'slide-section'} -->
@@ -219,8 +220,8 @@ System.out.println("n! = " + factorial);
 *   Calculating the product of all numbers in the interval [n..m]:
 
 ```cpp
-int n = scanner.nextInt()
-int m = scanner.nextInt()
+int n, m;
+std::cin >> n >> m;
 int number = n;
 double product = 1;
 
@@ -229,7 +230,7 @@ do {
     ++number;
 } while (number <= m);
 
-System.out.println("product[n..m] = " + product);
+std::cout << "product[n..m] = " << product << '\n';
 ```
 
 <!-- attr: { class: 'slide-section'} -->
@@ -246,6 +247,7 @@ System.out.println("product[n..m] = " + product);
 #   The `for` loop
 
 *   The typical `for` loop syntax is:
+
 ```cpp
 for (initialization; test; update) {
   statements;
@@ -295,8 +297,8 @@ for (... ; number < 10; ...) {
     *   Usually used to update the counter
 
 ```cpp
-for (...; number < 10; ...){
-  // Can use number heretar
+for (...; ... ; number ++){
+  // Can use number here
 }
 // Cannot use number here
 ```
@@ -307,12 +309,13 @@ for (...; number < 10; ...){
 
 #   Simple for Loop – Example
 
-*   _Example:_ Print the numbers 0…9:
+*   _Example:_ Print the numbers `0…9`:
 
 ```cpp
 for (int number = 0; number < 10; number++) {
-    System.out.println(number + " ");
+    std::cout << number << " ");
 }
+std::cout << '\n';
 ```
 
 *   _Example:_ Calculate `n!`:
@@ -330,7 +333,7 @@ for (int i = 1; i <= n; ++i) {
 
 ```cpp
 for (int i=1, sum=1; i<=128; i=i*2, sum+=i) {
-    System.out.println("i=" + i + ", sum=" + sum);
+    std::cout << "i=" << i << ", sum=" << sum << '\n';
 }
 ```
 
@@ -359,18 +362,17 @@ long result = 1;
 for (int i = 0; i < m; i++) {
     result *= n;
 }
-System.out.println("n^m = " + result);
+std::cout << "n^m = " << result << '\n';
 ```
 
-*   A better way to calculate N^M, than `Math.pow(n, m)`
+*   A better way to calculate N^M, than `pow(n, m)`
 
 #   Using continue Operator
 
-*   continue operator ends the iteration of the inner-most loop
-*   _Example:_ **sum** all **odd numbers** in [1, n] that are **not divisors of 7**:
+*   `continue` operator ends the iteration of the inner-most loop
+*   _Example:_ **sum** all **odd numbers** in `[1, n]` that are **not divisors of 7**:
 
 ```cpp
-int n = scanner.nextInt();
 int sum = 0;
 for (int i = 1; i <= n; i += 2) {
    if (i % 7 == 0) {
@@ -378,7 +380,7 @@ for (int i = 1; i <= n; i += 2) {
    }
    sum += i;
 }
-System.out.println("sum = " + sum);
+std::cout << "sum = " << sum << '\n';
 ```
 
 <!-- attr: { class: 'slide-section'} -->
@@ -395,13 +397,12 @@ System.out.println("sum = " + sum);
 
 *   The `for-in` loop is used to iterate collections
     *   Collections are arrays, lists, etc..
-    *   Everything that inherits `Iteratable`
     *   _Example:_
 
 ```cpp
-String[] names = {"Doncho", "Niki", "Evlogi", "Ivo", "Cuki"};
-for(String name: names){
-  System.out.println(name);
+int numbers[] = {5, 4, 2, 1, 3};
+for(int number: numbers){
+  std::cout << "Number: " << number << '\n';
 }
 ```
 
@@ -412,5 +413,5 @@ for(String name: names){
 <!-- section start -->
 
 <!-- attr: { class: 'slide-questions'} -->
-# Loops
+# Loops in C++
 ## Questions

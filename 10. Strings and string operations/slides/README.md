@@ -25,10 +25,27 @@
 
 <!-- attr: {} -->
 # C strings
-## Usage
-- I/O
+- Initialization
+  - Specified size
+  - Unspecified size
+
+```cpp
+char str[60];
+char str[] = "This is a C style string.";
+```
+
+- Strings are `'\0'` character terminated
+- Input / Output
   - `cin`, `cout`, `cin.getline`, ...
   - `scanf`, `printf`, `puts`, ...
+
+<!-- attr: {} -->
+# C strings
+- Operations
+  - find length of a string - `strlen`
+  - copy a string - `strcpy`
+  - concatenate strings - `strcat`
+  - compare strings - `strcmp`
 
 <!-- section start -->
 <!-- attr: {class: 'slide-section'} -->
@@ -37,9 +54,35 @@
 
 <!-- attr: {} -->
 # C++ strings
-## Usage
-- I/O
+- Initialization
+
+```cpp
+std::string str;
+std::string str = "This is a C++ string.";
+```
+
+- Strings are kept by pointer in a wrapper class
+- Input / Output
   - `cin`, `cout`, `getline`, ...
+
+<!-- attr: {} -->
+# C++ strings
+- Operations
+  - find length of a string - `.length()`
+  - copy a string - `=`
+  - concatenate strings - `+`, `+=`
+  - compare strings - `<`, `>`, `==`
+  - substring - `.substr()`
+  - pointer to C array - `.c_str()`
+
+<!-- attr: {hasScriptWrapper: true} -->
+# C++ strings
+- Similarity to `vector<char>`
+  - `.size()`
+  - `.push_back()`
+  - `.pop_back()`
+  - `.back()`
+  - `[]`
 
 <!-- section start -->
 <!-- attr: { class: 'slide-questions'} -->

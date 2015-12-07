@@ -3,7 +3,7 @@
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 
 # Loops
-##  Repeatedly excute the same code
+##  Repeatedly execute the same code
 <div class="signature">
     <p class="signature-course">C++ Fundamentals</p>
     <p class="signature-initiative">Telerik Algo Academy</p>

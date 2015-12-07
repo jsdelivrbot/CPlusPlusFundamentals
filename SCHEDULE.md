@@ -11,11 +11,11 @@
 | Loops                                   | Nov   |
 | Arrays & `vector<T>`                    | Nov   |
 | Functions                               | Nov   |
-| `const` expressions                     | Nov   |
-| Strings & String Operations             | Nov   |
-| Preprocessors                           | Nov   |
-| References, pointers and memory in C++  |
-| C++ Classes                             |
+| `const` expressions                     | Dec   |
+| Strings & String Operations             | Dec   |
+| Preprocessors                           | Dec   |
+| References, pointers and memory in C++  | Dec   |
+| C++ Classes                             | Dec   |
 | C++ Inheritance                         |
 | Exceptions                              |
 | Templates                               |

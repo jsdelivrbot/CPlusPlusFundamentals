@@ -12,7 +12,6 @@
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
-
 - Constants
   - Initialization
   - Usage
@@ -68,9 +67,11 @@ bool operator<(const type &A, const type &B) const
 # Constant expressions
 - Initialization
   - with the `constexpr` keyword
+  - Value must be given (for variables)
   - functions can also be defined as `constexpr`
+    - they must return non-void literal type
     - restricted to one statement in C++11
-	- can have multiple statements in C++14
+    - can have multiple statements in C++14
 
 <!-- attr: {} -->
 # Constant expressions

@@ -14,9 +14,14 @@
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
-
 - C style strings
+  - Initialization
+  - Input / Output
+    - In C and C++
 - Strings in C++
+  - Initialization
+  - Input / Output
+  - Usage as C style strings
 
 <!-- section start -->
 <!-- attr: {class: 'slide-section'} -->

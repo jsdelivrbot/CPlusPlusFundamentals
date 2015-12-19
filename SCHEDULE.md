@@ -15,7 +15,7 @@
 | Strings & String Operations             | Dec   |
 | Preprocessors                           | Dec   |
 | References, pointers and memory in C++  | Dec   |
-| C++ Classes                             | Dec   |
+| C++ Classes                             |       |
 | C++ Inheritance                         |
 | Exceptions                              |
 | Templates                               |

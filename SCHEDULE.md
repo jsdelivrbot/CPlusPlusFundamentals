@@ -15,9 +15,9 @@
 | Strings & String Operations             | Dec   |
 | Preprocessors                           | Dec   |
 | References, pointers and memory in C++  | Dec   |
-| C++ Classes                             |       |
-| C++ Inheritance                         |
-| Exceptions                              |
-| Templates                               |
+| C++ Classes                             | Jan   |
+| C++ Inheritance                         | Jan   |
+| Exceptions                              | Jan   |
+| Templates                               | Jan   |
 | STL fundamentals                        |
 | Advanced STL                            |

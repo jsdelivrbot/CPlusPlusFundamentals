@@ -208,7 +208,6 @@ Person somebody = 5;
 - Constructors are special functions, responsible for initializing objects
   - Declared inside the class
   - Have same name as the class
-
   - Accept parameters like normal functions
   - Can be overloaded like normal functions
   - Have direct access to the class members
@@ -282,7 +281,7 @@ public:
 These assignments do nothing – they set the parameters to their own values
 </div>
 
-<!-- attr: {} -->
+<!-- attr: { style:'font-size:40px' } -->
 # Constructors &amp; this
 - The `this` keyword
   - Explicitly refers to the current class instance
@@ -317,7 +316,7 @@ public:
 don't try to compile that
 <div>
 
-<!-- attr: { class:'slide-section demo'} -->
+<!-- attr: { class:'slide-section demo' } -->
 # Using "this" in Constructors
 ## Live Demo
 
@@ -348,7 +347,7 @@ public:
 };
 ```
 
-<!-- attr: {} -->
+<!-- attr: { style:'font-size:40px' } -->
 # Overloading Constructors
 - Constructor parameters can have default values, just like functions
 
@@ -371,13 +370,13 @@ public:
 # Constructor Overloading
 ## Live Demo
 
-<!-- attr: {} -->
+<!-- attr: { style:'font-size:40px' } -->
 # Destructors
 - Destructors are special functions, called when an object is freed from memory
 - A destructor is usually responsible for:
   - Cleaning up allocated dynamic memory by the instance
   - Resetting any changes a constructor could have made outside the instance
-- Syntax: same as constructor, with a ~ prefix and no parameters
+- Syntax: same as constructor, with a `~` prefix and no parameters
 
 ```cpp
 ~Person(){ ... }
@@ -433,6 +432,7 @@ public:
 # Methods
 ## Live Demo
 
+<!-- section start -->
 <!-- attr: { class:'slide-section' } -->
 # Operator Overloading
 ## Redefining basic operations for complex classes
@@ -511,6 +511,7 @@ c = a + b;
 c = a.operator+ (b);
 ```
 
+<!-- section start -->
 <!-- attr: { class:'slide-section demo' } -->
 # Static Members
 ## Members Common for all Instances
@@ -525,12 +526,12 @@ c = a.operator+ (b);
   - Must be initialized from outside the class
     - To avoid reinitialization
 
-<!-- attr: {} -->
+<!-- attr: { style:'font-size:40px', hasScriptWrapper:true } -->
 # Static Members
 - Example: Person static members
 
-```cpp
-class Person
+<pre style="overflow:auto;height:50%">
+<code style="height:90%">class Person
 {
 private:
     static int personCount;
@@ -557,10 +558,10 @@ public:
 
     static int getAveragePersonAge()
     {
-        return Person::totalPersonAge / Person::personCount;
+        return Person::totalPersonAge
+			/ Person::personCount;
     }
-};
-```
+};</code></pre>
 
 - Two ways of accessing static members:
   - Through class name, followed by ::
@@ -575,7 +576,7 @@ public:
 # Classes and const
 ## Restricting Modifications Compile-Time
 
-<!-- attr: {} -->
+<!-- attr: { style:'font-size:40px' } -->
 # Classes and const
 - Class members can be defined `const`
   - Fields follow the same rules as `const` variables
@@ -588,7 +589,8 @@ class Person {
     string getInfo() const
     {
         stringstream infoStream;
-        infoStream&lt;&lt;this-&gt;name&lt;&lt;", age: "&lt;&lt;this-&gt;age&lt;&lt;endl;
+        infoStream << this->name <<", age: "
+			<< this->age << endl;
         return infoStream.str();
     }
 };
@@ -602,13 +604,17 @@ class Person {
   - A `const` reference to an object can only call `const` methods
 - An object can be `const` like any variable
   - Only consturctor & `const` methods can be called
+
+```cpp
 const Person p = Person("Tony", 20);
 cout << p.getPersonInfo() << endl;
+```
 
 <!-- attr: { class:'slide-section demo' } -->
 # Classes and const
 ## Live Demo
 
+<!-- section start -->
 <!-- attr: { class:'slide-section' } -->
 # Pointers to Classes
 ## Instances in Dynamic Memory

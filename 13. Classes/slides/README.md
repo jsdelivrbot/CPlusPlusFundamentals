@@ -51,8 +51,8 @@
 # Class Definition Example
 - Defining a simple class to represent a Jedi
 
-```cpp
-class Jedi
+<pre style="overflow:auto;height:80%">
+<code style="height:90%">class Jedi
 {
 public:
     string name;
@@ -86,9 +86,7 @@ public:
         sentence += " ";
         cout&lt;&lt;sentence + this-&gt;name&lt;&lt;endl;
     }
-};
-```
-<!-- TODO: make it scrollable -->
+};</code></pre>
 
 <!-- attr: { class:'slide-section demo' } -->
 # Simple Class Definition
@@ -522,6 +520,7 @@ c = a.operator+ (b);
   - E.g. average person age – doesn't need to be specific for each instance
 - Static members
   - Single common variables for objects of a class
+};</code></pre>
   - Marked by the `static` keyword
   - Must be initialized from outside the class
     - To avoid reinitialization

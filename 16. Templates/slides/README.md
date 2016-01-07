@@ -16,23 +16,24 @@
   - Function templates
   - Class templates
   - Variable templates
-  - Template specialization
-  - Explicit template specialization <!-- TODO -->
-- Variadic templates <!-- TODO -->
-- Advantages and disadvantages of templates over macros <!-- TODO -->
+  - Explicit template specialization
+- Variadic templates
+- Advantages and disadvantages of templates over macros
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
 # Declaring templates
 ## `template<>`
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, style: 'font-size:40px' } -->
 <!-- # Declaring templates -->
 - Declared using `template<>` specifier
   - Multiple arguments are allowed
   - Each type can be
     - existing type: `int`, `double`, ...
 	- `typename`, `class`
+  - Arguments can have default values
+    - like functions
 
 ```cpp
 template <type1 identifier1, type2 identifier2, ...>
@@ -40,6 +41,8 @@ template <type1 identifier1, type2 identifier2, ...>
 template <int identifier>
 template <class identifier>
 template <typename identifier>
+
+template <typename T = int>
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -100,6 +103,7 @@ std::cout << pi<const char*> << '\n';
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # Declaring templates -->
 - Explicit template specialization
+  - Implement a special version of a function (or class, or variable) for a given set of templates
 
 ```cpp
 template<>
@@ -109,9 +113,88 @@ bool max<bool>(bool a, bool b)
 }
 ```
 
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # Declaring templates -->
+- Examples
+
+```cpp
+template<int n>
+long long factorial = factorial<n - 1> * n;
+template<> long long factorial<0> = 1;
+```
+```cpp
+template<typename T, int height>
+struct Tree {
+	Tree<T, height - 1> *left;
+	Tree<T, height - 1> *right;
+};
+
+template<typename T>
+struct Tree<T, 0> { // A leaf
+	T value;
+};
+```
+
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Declaring templates -->
 ## Live Demo
+
+<!-- section start -->
+<!-- attr: { class:'slide-section' } -->
+# Variadic templates
+## Tuples
+
+<!-- attr: { hasScriptWrapper:true,showInPresentation:true } -->
+<!-- # Variadic templates -->
+- Allows template definitions to take arbitary numbers of arguments (C++11)
+  - Makes `std::tuple<>` possible (C++11)
+
+```cpp
+template<typename... Values> class tuple;
+tuple<int, std::string, std::vector<int>> some_name;
+```
+
+- `typename... Values` declares a parameter pack
+  - can bind to zero or more arguments
+- `Values...` expands the pack
+
+<!-- attr: { hasScriptWrapper:true,showInPresentation:true } -->
+<!-- # Variadic templates -->
+- Often used recursively
+
+```cpp
+template<typename First, typename... Rest>
+class tuple {
+	First x;
+	tuple<Rest...> xs;
+};
+
+template<typename First>
+class tuple<First> {
+	First xs;
+};
+```
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
+<!-- # Variadic templates -->
+## Live Demo
+
+<!-- section start -->
+<!-- attr: { class:'slide-section' } -->
+# Advantages and disadvantages of templates over macros
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Advantages and disadvantages of templates over macros -->
+- Advantages of templates
+  - Type safety
+  - Not as limited as macros
+- Disadvantages of templates
+  - May be difficult to debug
+  - Some compilers don't support nested templates
+    - ot have nesting limit
+  - Must be in headers
+    - Complete project rebuild is required on change
+	- No information hiding
 
 <!-- section start -->
 <!-- attr: { class:'slide-questions', showInPresentation:true } -->

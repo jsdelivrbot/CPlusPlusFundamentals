@@ -87,5 +87,5 @@ catch(const std::exception& e)
 
 <!-- section start -->
 <!-- attr: { class:'slide-questions', showInPresentation:true } -->
-<!-- # Templates -->
+<!-- # Exceptions -->
 ## Questions

@@ -191,7 +191,7 @@ class tuple<First> {
 - Disadvantages of templates
   - May be difficult to debug
   - Some compilers don't support nested templates
-    - ot have nesting limit
+    - or have nesting limit
   - Must be in headers
     - Complete project rebuild is required on change
 	- No information hiding

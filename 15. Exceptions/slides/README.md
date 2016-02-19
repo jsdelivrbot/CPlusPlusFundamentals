@@ -5,7 +5,7 @@
 
 <div class="signature">
     <p class="signature-course">C++ Fundamentals</p>
-    <p class="signature-initiative">Telerik Software Academy</p>
+    <p class="signature-initiative">Telerik Algo Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 

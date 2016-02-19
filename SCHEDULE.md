@@ -8,16 +8,16 @@
 | Console IO                              | Oct   | 12:45 | 1.5h     | Cuki    |
 | Operators and expressions               | Oct   | 15:30 | 1h       | Cuki    |
 | Conditional Statements                  | Oct   | 16:45 | 1h       | Doncho  |
-| Loops                                   | Nov   |
-| Arrays & `vector<T>`                    | Nov   |
-| Functions                               | Nov   |
-| `const` expressions                     | Dec   |
-| Strings & String Operations             | Dec   |
-| Preprocessors                           | Dec   |
-| References, pointers and memory in C++  | Dec   |
-| C++ Classes                             | Jan   |
-| C++ Inheritance                         | Jan   |
-| Exceptions                              | Jan   |
-| Templates                               | Jan   |
-| STL fundamentals                        |
-| Advanced STL                            |
+| Loops                                   | Nov   |       |          |         |
+| Arrays & `vector<T>`                    | Nov   |       |          |         |
+| Functions                               | Nov   |       |          |         |
+| `const` expressions                     | Dec   |       |          |         |
+| Strings & String Operations             | Dec   |       |          |         |
+| Preprocessors                           | Dec   |       |          |         |
+| References, pointers and memory in C++  | Dec   |       |          |         |
+| C++ Classes                             | Jan   |       |          |         |
+| C++ Inheritance                         | Jan   |       |          |         |
+| Exceptions                              | Jan   |       |          |         |
+| Templates                               | Jan   |       |          |         |
+| STL fundamentals                        | Feb   |       |          |         |
+| Advanced STL                            | Feb   |       |          |         |

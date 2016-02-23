@@ -1,5 +1,5 @@
 <!-- section start -->
-<!-- attr: { id:'title', class:'slide-title', hasScriptWrapper:true } -->
+<!-- attr: { id:'title', hasScriptWrapper:true, showInPresentation:true } -->
 # STL fundamentals
 ## Basic Abstract Data Types
 
@@ -10,11 +10,382 @@
 </div>
 
 <!-- section start -->
-<!-- attr: {} -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Table of Contents
-- **TODO**
+- Basic Abstract Data Types
+  - List
+  - Linked List
+  - Stack
+  - Queue
+- ADTs in STL
+  - STL Intro
+  - Iterators
+  - Vector, list, stack, queue
 
 <!-- section start -->
-<!-- attr: { class:'slide-questions', showInPresentation:true } -->
-<!-- # STL fundamentals -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Abstract Data Types
+## Basic Data Structures
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # Abstract Data Types -->
+- An Abstract Data Type (ADT) is a data type together with the operations, whose properties are specified independently of any particular implementation
+  - ADT are set of definitions ofoperations
+  - Can have several different implementations
+  - Different implementations can have different efficiency
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Basic Data Structures
+- Linear structures
+  - Lists:fixed size and variable size
+  - Stacks: LIFO (Last In First Out) structure
+  - Queues: FIFO (First In First Out) structure
+- Trees
+  - Binary, ordered, balanced, etc.
+- Dictionaries (maps)
+  - Contain pairs (key, value)
+  - Hash tables:use hash functionstosearch/insert
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Lists
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# The List ADT
+- Data structure (container) that containsa sequence of elements
+  - Can have variablesize
+  - Elements are arrangedlinearly, in sequence
+- Can be implemented in several ways
+  - Statically (usingarray fixed size)
+  - Dynamically (linked implementation)
+  - Using resizable array
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Static List
+- Implemented by an array
+  - Directaccess byindex (fast)
+  - Insertion anddeletionand resizingare slow operations
+
+- L
+- 2
+- 18
+- 7
+- 12
+- 3
+- 6
+- 11
+- 9
+0   1   2   3   4   5   6   7
+
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Linked List
+- Dynamic(pointer-based)implementation
+  - Direct access to first/last element
+  - No access by index
+    - go through all previous elements (slow)
+  - Insertion and deletion are fast
+  - Resizing – add new element at the endor beginning
+
+- 2
+- next
+- 7
+- next
+head
+
+- 4
+- next
+
+- 5
+- next
+
+null
+
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Stacks
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# The Stack ADT
+- LIFO (Last In First Out) structure
+- Elements inserted (push) at “top”
+- Elements removed (pop) from “top”
+- Useful in many situations
+  - E.g. theexecution stackof the program
+- Can be implemented in several ways
+  - Statically (using array)
+  - Dynamically (linked implementation)
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Queues
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# The Queue ADT
+- FIFO (First In First Out) structure
+- Elements inserted atthe tail (Enqueue)
+- Elements removedfrom thehead(Dequeue)
+- Useful in many situations
+  - Printqueues,message queues, etc.
+- Can be implemented in several ways
+  - Statically (usingarray)
+  - Dynamically (using pointers)
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Standard Template Library
+## Introduction, Basic ADT Implementations
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL Introduction
+- Standard Template Library
+  - C++ Library
+  - Implements a lot of computer science fundamentals
+    - Containerclasses, Algorithms
+  - Iterators
+  - Mostly template-based
+  - Algorithms decoupled from containers through iterators
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Introduction -->
+- Containers
+  - Data structures, hold collections of elements
+  - Different benefits and downsides
+  - Implement fundamental Abstract Data Types
+    - Sequence, Associative, String, Adaptors…
+- Iterators
+  - Provide access to container elements
+  - Used to "traverse" containers
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Introduction -->
+- Algorithms
+  - Fundamental algorithms over collections or single
+  - Hook up with iterators to access container elements
+- Function objects
+  - Wrap functions/methods into objects
+  - Implement () operator – called like functions
+  - Called by algorithms and containers to act over elements (elements passed as parameters)
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Introduction -->
+## Live Demo
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL Iterators
+## Mechanism for traversing container elements
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Iterators -->
+- "Smart" pointers to objects
+- Specific for each container type
+  - Each container defines how it’s iterators work
+- If we have an iterator to one element
+  - Increase/decrease it to get the other elements
+- Types:
+  - Input, Output
+  - Forward iterator, Bidirectional iterator
+  - Random access iterator
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL Containers
+## Fast data structures to store elements
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Containers -->
+- Store collections of other objects
+- Has methods to access elements
+- Types
+  - Bytraversability:
+    - Forward – elements ordered, Forward Iterators
+    - Reversible – have Bidirectional iterators
+    - Random access – have Random access iterators
+  - By storage:
+    - sequence, adaptors, associative
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Basic STL Containers
+## Vector, List,Deque, Queue,Stack
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL Vector
+- Vector (#include &lt;vector&gt;)
+  - Defined:template &lt;class T&gt; vector
+  - Sequence, Random Access
+  - Stores a sequence of elements in contiguous memory
+  - Manages memory effectively
+  - Fast at retrieving elements by index and adding elements at the end
+  - Slow insertion/deletion in middle or beginning
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Vector -->
+- Declaring and initializing a vector
+- Vector size andis obtainedby callingsize()
+
+```cpp
+#include&lt;vector&gt; //required header
+…
+vector&lt;int&gt; numbers;
+numbers.push_back(42); //numbers is now {42}
+numbers.push_back(13); //numbers is now {42, 13}
+intconsoleNumber;cin&gt;&gt;consoleNumber;
+numbers.push_back(consoleNumber)
+vector&lt;int&gt; numbers;
+numbers.push_back(42);
+numbers.push_back(13);
+cout&lt;&lt;numbers.size(); //prints 2
+```
+
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Vector -->
+- Accessing vector elements
+  - Done the same way as with arrays, i.e.[]
+  - Traversing a vector is the same as traversing an array (e.g. with a for loop)
+  - Element access does not depend on vector size
+
+```cpp
+vector&lt;int&gt; numbers;
+numbers.push_back(42);
+numbers.push_back(13);
+cout&lt;&lt;numbers[1]; //prints 13
+cout&lt;&lt;endl;
+numbers[1] = numbers[0];
+cout&lt;&lt;numbers[1]; //prints 42
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL vector -->
+## Live Demo
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL (Linked) List
+- List (#include &lt;list&gt;)
+  - Defined:template &lt;class T&gt; list
+  - Sequence, Reversible
+  - Stores a sequence of elements in a doubly-linked list
+  - Fast at deletion/insertion anywhere
+  - No random access to elements
+    - Have to traverse list to get to an item
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL (Linked) List -->
+- Declaring and initializing alist
+- List sizeand is obtained by callingsize()
+- List elements can be removed from front and back fast
+
+```cpp
+list&lt;int&gt; numbers;
+
+numbers.push_back(2);
+numbers.push_front(1);
+numbers.push_back(3);
+numbers.pop_front();
+numbers.pop_back();
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL (Linked) List -->
+- Accessing list elements
+  - `front` and `back` methods provide first and last element access
+  - Only way to get access to all elements – traversal by iterator
+
+```cpp
+cout&lt;&lt;numbers.front();
+cout&lt;&lt;numbers.back();
+list&lt;int&gt;::iteratornumbersIterator;
+for(numbersIterator=numbers.begin();
+  numbersIterator!=numbers.end();
+  numbersIterator++)
+{
+  cout&lt;&lt;*numbersIterator&lt;&lt;endl;
+}
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL list
+## Live Demo
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL Queue
+- Queue (#include&lt;queue&gt;)
+  - Defined:template &lt;class T&gt;queue
+  - Sequence Adaptor
+  - First in, First outstructure (FIFO)
+  - Stores a sequence of elements
+  - Provides access only to first element
+  - Can removeonlyatfront
+  - Can add onlyat back
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Queue -->
+- Declaring and initializing a queue
+- Queue size is obtained by callingsize()
+- Queues allow removing elements only from the front of the sequence
+
+```cpp
+queue&lt;int&gt; q;
+
+q.push(1);
+q.push(2);
+q.push(3);
+q.pop();
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Queue -->
+- Accessing queue elements
+  - `front` and `back` methods provide first and last element access
+  - Other types of access to queue elements are meaningless
+    - The idea of the queue is to restrict access and be FIFO
+
+```cpp
+cout&lt;&lt;q.front();
+cout&lt;&lt;q.back();
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL queue -->
+## Live Demo
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# STL Stack
+- Stack (#include &lt;stack&gt;)
+  - Defined:template &lt;class T&gt; stack
+  - Sequence adaptor
+  - Last in, First out structure (LIFO)
+  - Stores a sequence ofelements
+  - Provides access only to last element
+  - Can remove or add elements only at back/top
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Stack -->
+- Declaring and initializing a stack
+- Stack size is obtained by calling `size()`
+- Stacks allow removing elements only from the back (top) of the sequence
+
+```cpp
+stack&lt;int&gt;s;
+
+s.push(1);
+s.push(2);
+s.push(3);
+s.pop();
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL Stack -->
+- Accessing stack elements
+  - `top` method provides first element access
+  - Other types of access to stack elements are meaningless
+    - The idea of the stack is to restrict access and be LIFO
+
+```cpp
+cout&lt;&lt;s.top();
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL stack -->
+## Live Demo
+
+<!-- section start -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Basic ADTs in STL
 ## Questions

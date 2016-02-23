@@ -4,9 +4,9 @@
 ## Basic Abstract Data Types
 
 <div class="signature">
-    <p class="signature-course">C++ Fundamentals</p>
-    <p class="signature-initiative">Telerik Algo Academy</p>
-    <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
+   <p class="signature-course">C++ Fundamentals</p>
+   <p class="signature-initiative">Telerik Algo Academy</p>
+   <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
 <!-- section start -->
@@ -23,7 +23,7 @@
   - Vector, list, stack, queue
 
 <!-- section start -->
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Abstract Data Types
 ## Basic Data Structures
 
@@ -46,7 +46,7 @@
   - Contain pairs (key, value)
   - Hash tables:use hash functionstosearch/insert
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Lists
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -101,7 +101,7 @@ head
 null
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Stacks
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -115,7 +115,7 @@ null
   - Statically (using array)
   - Dynamically (linked implementation)
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Queues
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -129,7 +129,8 @@ null
   - Statically (usingarray)
   - Dynamically (using pointers)
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- section start -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Standard Template Library
 ## Introduction, Basic ADT Implementations
 
@@ -164,11 +165,12 @@ null
   - Implement () operator – called like functions
   - Called by algorithms and containers to act over elements (elements passed as parameters)
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 <!-- # STL Introduction -->
 ## Live Demo
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- section start -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # STL Iterators
 ## Mechanism for traversing container elements
 
@@ -184,7 +186,8 @@ null
   - Forward iterator, Bidirectional iterator
   - Random access iterator
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- section start -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # STL Containers
 ## Fast data structures to store elements
 
@@ -200,7 +203,8 @@ null
   - By storage:
     - sequence, adaptors, associative
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- section start -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Basic STL Containers
 ## Vector, List,Deque, Queue,Stack
 
@@ -251,7 +255,7 @@ numbers[1] = numbers[0];
 cout&lt;&lt;numbers[1]; //prints 42
 ```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 <!-- # STL vector -->
 ## Live Demo
 
@@ -299,7 +303,7 @@ for(numbersIterator=numbers.begin();
 }
 ```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # STL list
 ## Live Demo
 
@@ -341,7 +345,7 @@ cout&lt;&lt;q.front();
 cout&lt;&lt;q.back();
 ```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 <!-- # STL queue -->
 ## Live Demo
 
@@ -381,11 +385,11 @@ s.pop();
 cout&lt;&lt;s.top();
 ```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 <!-- # STL stack -->
 ## Live Demo
 
 <!-- section start -->
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-questions' } -->
 # Basic ADTs in STL
 ## Questions

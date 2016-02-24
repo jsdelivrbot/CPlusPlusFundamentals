@@ -188,7 +188,7 @@
 <!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Basic STL Containers
-## Vector, List,Deque, Queue,Stack
+## Vector, List, Deque, Queue, Stack
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL Vector
@@ -205,12 +205,13 @@
 - Declaring and initializing a vector
 
 ```cpp
-#include<vector> //required header
+#include<vector> // required header
 
 vector<int> numbers;
-numbers.push_back(42); //numbers is now {42}
-numbers.push_back(13); //numbers is now {42, 13}
-intconsoleNumber;cin>>consoleNumber;
+numbers.push_back(42); // numbers is now {42}
+numbers.push_back(13); // numbers is now {42, 13}
+int consoleNumber;
+cin >> consoleNumber;
 numbers.push_back(consoleNumber)
 ```
 - Vector size and is obtained by calling `size()`
@@ -219,7 +220,7 @@ numbers.push_back(consoleNumber)
 vector<int> numbers;
 numbers.push_back(42);
 numbers.push_back(13);
-cout<<numbers.size(); //prints 2
+cout << numbers.size(); // prints 2
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -231,10 +232,10 @@ cout<<numbers.size(); //prints 2
 vector<int> numbers;
 numbers.push_back(42);
 numbers.push_back(13);
-cout<<numbers[1]; //prints 13
-cout<<endl;
+cout << numbers[1]; // prints 13
+cout << endl;
 numbers[1] = numbers[0];
-cout<<numbers[1]; //prints 42
+cout << numbers[1]; // prints 42
 ```
   - Traversing a vector is the same as traversing an array (e.g. with a for loop)
   - Element access does not depend on vector size
@@ -278,8 +279,8 @@ numbers.pop_back();
   - `front` and `back` methods provide first and last element access
 
 ```cpp
-cout<<numbers.front();
-cout<<numbers.back();
+cout << numbers.front();
+cout << numbers.back();
 ```
   - Only way to get access to all elements – traversal by iterator
 
@@ -289,7 +290,7 @@ for(numbersIterator=numbers.begin();
   numbersIterator!=numbers.end();
   numbersIterator++)
 {
-  cout<<*numbersIterator<<endl;
+  cout << *numbersIterator << endl;
 }
 ```
 
@@ -333,8 +334,8 @@ q.pop();
   - `front` and `back` methods provide first and last element access
 
 ```cpp
-cout<<q.front();
-cout<<q.back();
+cout << q.front();
+cout << q.back();
 ```
   - Other types of access to queue elements are meaningless
     - The idea of the queue is to restrict access and be FIFO
@@ -377,7 +378,7 @@ s.pop();
   - `top` method provides first element access
 
 ```cpp
-cout<<s.top();
+cout << s.top();
 ```
   - Other types of access to stack elements are meaningless
     - The idea of the stack is to restrict access and be LIFO

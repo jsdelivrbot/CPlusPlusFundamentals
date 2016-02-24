@@ -213,7 +213,7 @@ numbers.push_back(13); //numbers is now {42, 13}
 intconsoleNumber;cin&gt;&gt;consoleNumber;
 numbers.push_back(consoleNumber)
 ```
-- Vector size andis obtainedby calling `size()`
+- Vector size and is obtained by calling `size()`
 
 ```cpp
 vector&lt;int&gt; numbers;

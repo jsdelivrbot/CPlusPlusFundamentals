@@ -55,7 +55,7 @@
   - Can have variable size
   - Elements are arranged linearly, in sequence
 - Can be implemented in several ways
-  - Statically (using array -> fixed size)
+  - Statically (using array &rarr; fixed size)
   - Dynamically (linked implementation)
   - Using resizable array
 

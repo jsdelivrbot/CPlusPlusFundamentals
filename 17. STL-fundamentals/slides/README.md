@@ -55,7 +55,7 @@
   - Can have variable size
   - Elements are arranged linearly, in sequence
 - Can be implemented in several ways
-  - Statically (using array -&gt; fixed size)
+  - Statically (using array -> fixed size)
   - Dynamically (linked implementation)
   - Using resizable array
 
@@ -192,8 +192,8 @@
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL Vector
-- Vector (`#include &lt;vector&gt;`)
-  - Defined: `template &lt;class T&gt; vector`
+- Vector (`#include <vector>`)
+  - Defined: `template <class T> vector`
   - Sequence, Random Access
   - Stores a sequence of elements in contiguous memory
   - Manages memory effectively
@@ -205,21 +205,21 @@
 - Declaring and initializing a vector
 
 ```cpp
-#include&lt;vector&gt; //required header
+#include<vector> //required header
 
-vector&lt;int&gt; numbers;
+vector<int> numbers;
 numbers.push_back(42); //numbers is now {42}
 numbers.push_back(13); //numbers is now {42, 13}
-intconsoleNumber;cin&gt;&gt;consoleNumber;
+intconsoleNumber;cin>>consoleNumber;
 numbers.push_back(consoleNumber)
 ```
 - Vector size and is obtained by calling `size()`
 
 ```cpp
-vector&lt;int&gt; numbers;
+vector<int> numbers;
 numbers.push_back(42);
 numbers.push_back(13);
-cout&lt;&lt;numbers.size(); //prints 2
+cout<<numbers.size(); //prints 2
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -228,13 +228,13 @@ cout&lt;&lt;numbers.size(); //prints 2
   - Done the same way as with arrays, i.e. `[]`
 
 ```cpp
-vector&lt;int&gt; numbers;
+vector<int> numbers;
 numbers.push_back(42);
 numbers.push_back(13);
-cout&lt;&lt;numbers[1]; //prints 13
-cout&lt;&lt;endl;
+cout<<numbers[1]; //prints 13
+cout<<endl;
 numbers[1] = numbers[0];
-cout&lt;&lt;numbers[1]; //prints 42
+cout<<numbers[1]; //prints 42
 ```
   - Traversing a vector is the same as traversing an array (e.g. with a for loop)
   - Element access does not depend on vector size
@@ -245,8 +245,8 @@ cout&lt;&lt;numbers[1]; //prints 42
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL (Linked) List
-- List (`#include &lt;list&gt;`)
-  - Defined: `template &lt;class T&gt; list`
+- List (`#include <list>`)
+  - Defined: `template <class T> list`
   - Sequence, Reversible
   - Stores a sequence of elements in a doubly-linked list
   - Fast at deletion/insertion anywhere
@@ -258,7 +258,7 @@ cout&lt;&lt;numbers[1]; //prints 42
 - Declaring and initializing alist
 
 ```cpp
-list&lt;int&gt; numbers;
+list<int> numbers;
 
 numbers.push_back(2);
 numbers.push_front(1);
@@ -278,18 +278,18 @@ numbers.pop_back();
   - `front` and `back` methods provide first and last element access
 
 ```cpp
-cout&lt;&lt;numbers.front();
-cout&lt;&lt;numbers.back();
+cout<<numbers.front();
+cout<<numbers.back();
 ```
   - Only way to get access to all elements – traversal by iterator
 
 ```cpp
-list&lt;int&gt;::iteratornumbersIterator;
+list<int>::iteratornumbersIterator;
 for(numbersIterator=numbers.begin();
   numbersIterator!=numbers.end();
   numbersIterator++)
 {
-  cout&lt;&lt;*numbersIterator&lt;&lt;endl;
+  cout<<*numbersIterator<<endl;
 }
 ```
 
@@ -299,8 +299,8 @@ for(numbersIterator=numbers.begin();
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL Queue
-- Queue (`#include&lt;queue&gt;`)
-  - Defined: `template &lt;class T&gt;queue`
+- Queue (`#include<queue>`)
+  - Defined: `template <class T>queue`
   - Sequence Adaptor
   - First in, First outstructure (FIFO)
   - Stores a sequence of elements
@@ -313,7 +313,7 @@ for(numbersIterator=numbers.begin();
 - Declaring and initializing a queue
 
 ```cpp
-queue&lt;int&gt; q;
+queue<int> q;
 
 q.push(1);
 q.push(2);
@@ -333,8 +333,8 @@ q.pop();
   - `front` and `back` methods provide first and last element access
 
 ```cpp
-cout&lt;&lt;q.front();
-cout&lt;&lt;q.back();
+cout<<q.front();
+cout<<q.back();
 ```
   - Other types of access to queue elements are meaningless
     - The idea of the queue is to restrict access and be FIFO
@@ -345,8 +345,8 @@ cout&lt;&lt;q.back();
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL Stack
-- Stack (`#include &lt;stack&gt;`)
-  - Defined: `template &lt;class T&gt; stack`
+- Stack (`#include <stack>`)
+  - Defined: `template <class T> stack`
   - Sequence adaptor
   - Last in, First out structure (LIFO)
   - Stores a sequence ofelements
@@ -358,7 +358,7 @@ cout&lt;&lt;q.back();
 - Declaring and initializing a stack
 
 ```cpp
-stack&lt;int&gt;s;
+stack<int>s;
 
 s.push(1);
 s.push(2);
@@ -377,7 +377,7 @@ s.pop();
   - `top` method provides first element access
 
 ```cpp
-cout&lt;&lt;s.top();
+cout<<s.top();
 ```
   - Other types of access to stack elements are meaningless
     - The idea of the stack is to restrict access and be LIFO

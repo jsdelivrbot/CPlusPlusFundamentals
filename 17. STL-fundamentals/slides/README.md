@@ -64,18 +64,11 @@
 - Implemented by an array
   - Direct access by index (fast)
   - Insertion, deletion and resizing are slow operations
+- List:
 
-<!-- TODO: fix -->
-- L
-- 2
-- 18
-- 7
-- 12
-- 3
-- 6
-- 11
-- 9
-0   1   2   3   4   5   6   7
+| Index ||  0 |  1 |  2 |  3 |  4 |  5 |  6 |  7 |
+|-------||----|----|----|----|----|----|----|----|
+| List  ||  2 | 18 |  7 | 12 |  3 |  6 | 11 |  9 |
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Linked List
@@ -86,20 +79,9 @@
   - Insertion and deletion are fast
   - Resizing – add new element at the endor beginning
 
-<!-- TODO: fix -->
-- 2
-- next
-- 7
-- next
-head
-
-- 4
-- next
-
-- 5
-- next
-
-null
+|        | 2      | 7      | 4      |   5    | `null` |
+|:------:|:------:|:------:|:------:|:------:|
+| `head` | `next` | `next` | `next` | `next` |
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Stacks

@@ -37,34 +37,35 @@
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Basic Data Structures
 - Linear structures
-  - Lists:fixed size and variable size
+  - Lists: fixed size and variable size
   - Stacks: LIFO (Last In First Out) structure
   - Queues: FIFO (First In First Out) structure
 - Trees
   - Binary, ordered, balanced, etc.
 - Dictionaries (maps)
   - Contain pairs (key, value)
-  - Hash tables:use hash functionstosearch/insert
+  - Hash tables: use hash functions to search/insert
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Lists
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # The List ADT
-- Data structure (container) that containsa sequence of elements
-  - Can have variablesize
-  - Elements are arrangedlinearly, in sequence
+- Data structure (container) that contains a sequence of elements
+  - Can have variable size
+  - Elements are arranged linearly, in sequence
 - Can be implemented in several ways
-  - Statically (usingarray fixed size)
+  - Statically (using array -&gt; fixed size)
   - Dynamically (linked implementation)
   - Using resizable array
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Static List
 - Implemented by an array
-  - Directaccess byindex (fast)
-  - Insertion anddeletionand resizingare slow operations
+  - Direct access by index (fast)
+  - Insertion, deletion and resizing are slow operations
 
+<!-- TODO: fix -->
 - L
 - 2
 - 18
@@ -76,16 +77,16 @@
 - 9
 0   1   2   3   4   5   6   7
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Linked List
-- Dynamic(pointer-based)implementation
+- Dynamic (pointer-based) implementation
   - Direct access to first/last element
   - No access by index
     - go through all previous elements (slow)
   - Insertion and deletion are fast
   - Resizing – add new element at the endor beginning
 
+<!-- TODO: fix -->
 - 2
 - next
 - 7
@@ -100,17 +101,16 @@ head
 
 null
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Stacks
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # The Stack ADT
 - LIFO (Last In First Out) structure
-- Elements inserted (push) at “top”
-- Elements removed (pop) from “top”
+- Elements inserted (push) at "top"
+- Elements removed (pop) from "top"
 - Useful in many situations
-  - E.g. theexecution stackof the program
+  - E.g. the execution stack of the program
 - Can be implemented in several ways
   - Statically (using array)
   - Dynamically (linked implementation)
@@ -121,12 +121,12 @@ null
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # The Queue ADT
 - FIFO (First In First Out) structure
-- Elements inserted atthe tail (Enqueue)
-- Elements removedfrom thehead(Dequeue)
+- Elements inserted at the tail (Enqueue)
+- Elements removed from the head (Dequeue)
 - Useful in many situations
-  - Printqueues,message queues, etc.
+  - Print queues, message queues, etc.
 - Can be implemented in several ways
-  - Statically (usingarray)
+  - Statically (using array)
   - Dynamically (using pointers)
 
 <!-- section start -->
@@ -139,7 +139,7 @@ null
 - Standard Template Library
   - C++ Library
   - Implements a lot of computer science fundamentals
-    - Containerclasses, Algorithms
+    - Container classes, Algorithms
   - Iterators
   - Mostly template-based
   - Algorithms decoupled from containers through iterators
@@ -150,7 +150,7 @@ null
   - Data structures, hold collections of elements
   - Different benefits and downsides
   - Implement fundamental Abstract Data Types
-    - Sequence, Associative, String, Adaptors…
+    - Sequence, Associative, String, Adaptors...
 - Iterators
   - Provide access to container elements
   - Used to "traverse" containers
@@ -162,7 +162,7 @@ null
   - Hook up with iterators to access container elements
 - Function objects
   - Wrap functions/methods into objects
-  - Implement () operator – called like functions
+  - Implement `()` operator – called like functions
   - Called by algorithms and containers to act over elements (elements passed as parameters)
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
@@ -178,7 +178,7 @@ null
 <!-- # STL Iterators -->
 - "Smart" pointers to objects
 - Specific for each container type
-  - Each container defines how it’s iterators work
+  - Each container defines how it's iterators work
 - If we have an iterator to one element
   - Increase/decrease it to get the other elements
 - Types:
@@ -196,7 +196,7 @@ null
 - Store collections of other objects
 - Has methods to access elements
 - Types
-  - Bytraversability:
+  - By traversability:
     - Forward – elements ordered, Forward Iterators
     - Reversible – have Bidirectional iterators
     - Random access – have Random access iterators
@@ -210,8 +210,8 @@ null
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL Vector
-- Vector (#include &lt;vector&gt;)
-  - Defined:template &lt;class T&gt; vector
+- Vector (`#include &lt;vector&gt;`)
+  - Defined: `template &lt;class T&gt; vector`
   - Sequence, Random Access
   - Stores a sequence of elements in contiguous memory
   - Manages memory effectively
@@ -221,29 +221,29 @@ null
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # STL Vector -->
 - Declaring and initializing a vector
-- Vector size andis obtainedby callingsize()
 
 ```cpp
 #include&lt;vector&gt; //required header
-…
+
 vector&lt;int&gt; numbers;
 numbers.push_back(42); //numbers is now {42}
 numbers.push_back(13); //numbers is now {42, 13}
 intconsoleNumber;cin&gt;&gt;consoleNumber;
 numbers.push_back(consoleNumber)
+```
+- Vector size andis obtainedby calling `size()`
+
+```cpp
 vector&lt;int&gt; numbers;
 numbers.push_back(42);
 numbers.push_back(13);
 cout&lt;&lt;numbers.size(); //prints 2
 ```
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # STL Vector -->
 - Accessing vector elements
-  - Done the same way as with arrays, i.e.[]
-  - Traversing a vector is the same as traversing an array (e.g. with a for loop)
-  - Element access does not depend on vector size
+  - Done the same way as with arrays, i.e. `[]`
 
 ```cpp
 vector&lt;int&gt; numbers;
@@ -254,6 +254,8 @@ cout&lt;&lt;endl;
 numbers[1] = numbers[0];
 cout&lt;&lt;numbers[1]; //prints 42
 ```
+  - Traversing a vector is the same as traversing an array (e.g. with a for loop)
+  - Element access does not depend on vector size
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 <!-- # STL vector -->
@@ -261,8 +263,8 @@ cout&lt;&lt;numbers[1]; //prints 42
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL (Linked) List
-- List (#include &lt;list&gt;)
-  - Defined:template &lt;class T&gt; list
+- List (`#include &lt;list&gt;`)
+  - Defined: `template &lt;class T&gt; list`
   - Sequence, Reversible
   - Stores a sequence of elements in a doubly-linked list
   - Fast at deletion/insertion anywhere
@@ -272,8 +274,6 @@ cout&lt;&lt;numbers[1]; //prints 42
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # STL (Linked) List -->
 - Declaring and initializing alist
-- List sizeand is obtained by callingsize()
-- List elements can be removed from front and back fast
 
 ```cpp
 list&lt;int&gt; numbers;
@@ -281,6 +281,11 @@ list&lt;int&gt; numbers;
 numbers.push_back(2);
 numbers.push_front(1);
 numbers.push_back(3);
+```
+- List sizeand is obtained by calling `size()`
+- List elements can be removed from front and back fast
+
+```cpp
 numbers.pop_front();
 numbers.pop_back();
 ```
@@ -289,11 +294,14 @@ numbers.pop_back();
 <!-- # STL (Linked) List -->
 - Accessing list elements
   - `front` and `back` methods provide first and last element access
-  - Only way to get access to all elements – traversal by iterator
 
 ```cpp
 cout&lt;&lt;numbers.front();
 cout&lt;&lt;numbers.back();
+```
+  - Only way to get access to all elements – traversal by iterator
+
+```cpp
 list&lt;int&gt;::iteratornumbersIterator;
 for(numbersIterator=numbers.begin();
   numbersIterator!=numbers.end();
@@ -309,20 +317,18 @@ for(numbersIterator=numbers.begin();
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL Queue
-- Queue (#include&lt;queue&gt;)
-  - Defined:template &lt;class T&gt;queue
+- Queue (`#include&lt;queue&gt;`)
+  - Defined: `template &lt;class T&gt;queue`
   - Sequence Adaptor
   - First in, First outstructure (FIFO)
   - Stores a sequence of elements
   - Provides access only to first element
-  - Can removeonlyatfront
-  - Can add onlyat back
+  - Can remove only at front
+  - Can add only at back
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # STL Queue -->
 - Declaring and initializing a queue
-- Queue size is obtained by callingsize()
-- Queues allow removing elements only from the front of the sequence
 
 ```cpp
 queue&lt;int&gt; q;
@@ -330,6 +336,12 @@ queue&lt;int&gt; q;
 q.push(1);
 q.push(2);
 q.push(3);
+```
+
+- Queue size is obtained by calling `size()`
+- Queues allow removing elements only from the front of the sequence
+
+```cpp
 q.pop();
 ```
 
@@ -337,13 +349,13 @@ q.pop();
 <!-- # STL Queue -->
 - Accessing queue elements
   - `front` and `back` methods provide first and last element access
-  - Other types of access to queue elements are meaningless
-    - The idea of the queue is to restrict access and be FIFO
 
 ```cpp
 cout&lt;&lt;q.front();
 cout&lt;&lt;q.back();
 ```
+  - Other types of access to queue elements are meaningless
+    - The idea of the queue is to restrict access and be FIFO
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 <!-- # STL queue -->
@@ -351,8 +363,8 @@ cout&lt;&lt;q.back();
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # STL Stack
-- Stack (#include &lt;stack&gt;)
-  - Defined:template &lt;class T&gt; stack
+- Stack (`#include &lt;stack&gt;`)
+  - Defined: `template &lt;class T&gt; stack`
   - Sequence adaptor
   - Last in, First out structure (LIFO)
   - Stores a sequence ofelements
@@ -362,8 +374,6 @@ cout&lt;&lt;q.back();
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # STL Stack -->
 - Declaring and initializing a stack
-- Stack size is obtained by calling `size()`
-- Stacks allow removing elements only from the back (top) of the sequence
 
 ```cpp
 stack&lt;int&gt;s;
@@ -371,6 +381,11 @@ stack&lt;int&gt;s;
 s.push(1);
 s.push(2);
 s.push(3);
+```
+- Stack size is obtained by calling `size()`
+- Stacks allow removing elements only from the back (top) of the sequence
+
+```cpp
 s.pop();
 ```
 
@@ -378,12 +393,12 @@ s.pop();
 <!-- # STL Stack -->
 - Accessing stack elements
   - `top` method provides first element access
-  - Other types of access to stack elements are meaningless
-    - The idea of the stack is to restrict access and be LIFO
 
 ```cpp
 cout&lt;&lt;s.top();
 ```
+  - Other types of access to stack elements are meaningless
+    - The idea of the stack is to restrict access and be LIFO
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 <!-- # STL stack -->

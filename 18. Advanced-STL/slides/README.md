@@ -33,7 +33,7 @@
   - Creating and using Generators, Unary and Binary Functors
 
 <!-- section start -->
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Containers
 ## STL Container Architecture, Advanced Containers
 
@@ -136,9 +136,9 @@
   - `stack`
   - `priority_queue`
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Advanced Container Models
-## priority_\queue, map, set, multimap, multiset, Usage and Examples
+## priority\_queue, map, set, multimap, multiset, Usage and Examples
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Priority Queue
@@ -193,7 +193,7 @@ numsBySize.top(); //returns 3, does not remove it
 stringsByLex.pop(); // removes "c"
 ```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Priority Queue Usage
 ## Live Demo
 
@@ -206,7 +206,7 @@ stringsByLex.pop(); // removes "c"
 - Simple problem:
   - Given a sequence of numbers, eachtime a numbers is `0`, print the largest number so-far
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Simple Problem Solved with a Priority Queue
 ## Live Demo
 
@@ -276,7 +276,7 @@ uniqueNums.erase(uniqueNums.begin());
 uniqueNums.erase(2);
 ```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Set Usage
 ## Live Demo
 
@@ -288,7 +288,7 @@ uniqueNums.erase(2);
 - Simple problem:
   - You are given a sequence of numbers. Print all numbers in the sequence, without printing the same number more than once
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Simple Problem Solved with a Set
 ## Live Demo
 
@@ -309,152 +309,153 @@ nums.insert(2);
 nums.insert(2); // nums contains: 2, 2
 ```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Multiset Usage
 ## Live Demo
 
 <!-- TODO: fix slides to bottom -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Map
-Categories:Sorted,Unique,Pair
-Each element has a key
+- Categories: `Sorted`, `Unique`, `Pair`
+- Each element has a key
   - Accessing elements is done through the key
-Guarantees no duplicate elements
-Element keys are iterated in increasing order
-Often pictured as an array, the indices of which can be any type – number, string or even some class
-
-
+- Guarantees no duplicate elements
+- Element keys are iterated in increasing order
+- Often pictured as an array, the indices of which can be any type – number, string or even some class
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Map
-Map (#include&lt;map&gt;)
-  - map &lt;Key, Data,Compare = less&lt;Key&gt;Alloc= new&gt;
-  - Keymust be comparable byCompare
+- Map (`#include<map>`)
+  - `map<Key, Data, Compare = less<Key>, Alloc = new>`
+  - `Key` must be comparable by `Compare`
   - Fast at accessing elements by key (log n)
   - Fast at deleting elements by key (log n)
   - Fast at inserting elements by key (log n)
-  - Values are of the typestd::pair&lt;Key, Data&gt;
-    - Iterators will point tostd::pairobjects
-  - 
-
+  - Values are of the type `std::pair<Key, Data>`
+    - Iterators will point to `std::pair` objects
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Map
-Declaring and initializing a map:
-- Accessing element by key:
-- Removing element by key:
-- 
+- Declaring and initializing a map:
 
-#include&lt;map&gt; //required header
-…
-map&lt;char*,int&gt;peopleAges;
+```cpp
+#include<map> //required header
+
+map<char*, int> peopleAges;
 
 peopleAges["Joro"] = 22;
 peopleAges.insert(pair&lt;char*,int&gt;("Petya", 20));
-peopleAges.erase("Joro");
-peopleAges["Petya"];
-peopleAges["Petya"]++;
-
+```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # Map -->
+- Accessing element by key:
+
+```cpp
+peopleAges["Petya"];
+peopleAges["Petya"]++;
+```
+
+- Removing element by key:
+```cpp
+peopleAges.erase("Joro");
+```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Map Usage
 ## Live Demo
 
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Problems Solved withMaps
-Maps have similar efficiency as hash-tables, but keep elements ordered
-Many compression algorithms use maps/hash-tables
-Several cryptographic attacks use maps/hash-tables
-Simple Problem:
+# Problems Solved with Maps
+- Maps have similar efficiency as hash-tables, but keep elements ordered
+- Many compression algorithms use maps/hash-tables
+- Several cryptographic attacks use maps/hash-tables
+- Simple Problem:
   - You are given a sentence of words. Count how many times each word occurs in the text.
 
-
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Simple Problem Solved with a Map
 ## Live Demo
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Multimap
-Same as amap, without theUniquecategory
+- Same as a `map`, without the `Unique` category
   - i.e. there can be repeating elements
-  - No[]operator, as there can be multiple values, corresponding to the same key
+  - No `[]` operator, as there can be multiple values, corresponding to the same key
   - All other operations &amp; properties are the same
   - Most element access is done through iterators
-  - 
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Multimap
-Multimap(#include &lt;map&gt;)
-  - multimap(same template parameters asmap)
-  - Declaring and initializing amultimap
+- Multimap(`#include<map>`)
+  - `multimap` (same template parameters as `map`)
+  - Declaring and initializing a multimap
 
-#include&lt;map&gt; //required header
-…
-multimap&lt;string, string&gt;personNicks;
-personNicks.insert(pair&lt;string, string&gt;("George", "Joro"));
-personNicks.insert(pair&lt;string, string&gt;("George", "Gosho"));
-personNicks.insert(pair&lt;string, string&gt;("George", "Joro"));
-personNicks.insert(pair&lt;string, string&gt;("George", "Gopi"));
+```cpp
+#include<map> //required header
 
+multimap<string, string> personNicks;
+personNicks.insert({"George", "Joro"});
+personNicks.insert({"George", "Gosho"});
+personNicks.insert({"George", "Joro"});
+personNicks.insert({"George", "Gopi"});
+```
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# MultimapUsage
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
+# Multimap Usage
 ## Live Demo
 
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Iterators
 ## The Way of STL Element Access
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators
-Iterators are a pattern in STL
-Enable access to container elements
+- Iterators are a pattern in STL
+- Enable access to container elements
   - For almost any container's elements
-Most container iterators have similar mechanics to pointers
+- Most container iterators have similar mechanics to pointers
   - Can be incremented, to point to next element
   - Can be dereferenced, to get element value
-  - Can use-&gt;operator to access element members
-  - Can beconst
+  - Can use `->` operator to access element members
+  - Can be `const`
 
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:42px' } -->
 # Iterators
-Each container defines its own iterator type
+- Each container defines its own iterator type
   - A class inside the container's class
-Syntax to access iterator type
-- Example for an iterator of avector&lt;int&gt;:
-container_type&lt;template_parameters...&gt;::iterator
-vector&lt;int&gt; numbers;
+- Syntax to access iterator type
+
+```cpp
+container_type<template_parameters...>::iterator
+```
+- Example for an iterator of a `vector<int>`:
+
+```cpp
+vector<int> numbers;
 numbers.push_back(1);
 numbers.push_back(2);
 
-vector&lt;int&gt;::iteratornumsIter=numbers.begin();
-cout&lt;&lt;*numsIter&lt;&lt;endl;
+vector<int>::iteratornumsIter = numbers.begin();
+cout << *numsIter << endl;
 numsIter++;
-cout&lt;&lt;*numsIter&lt;&lt;endl;
+cout << *numsIter << endl;
+```
 
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Iterators: Simple Example
 ## Live Demo
 
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Iterators and Containers
 ## Syntax, Usage, Examples
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators
-Several types of iterator Concepts
+- Several types of iterator Concepts
   - with differing purposes and functionality
-OutputIterator
+- `Output Iterator`
   - Supports storing values
     - i.e. writing values to the pointed element
     - i.e. mutable
@@ -462,59 +463,56 @@ OutputIterator
   - Other operations are not necessarily supported
     - i.e. no guarantee on dereferencing, comparing…
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators
-Input Iterator
+- `Input Iterator`
   - Supports dereferencing
   - Supports incrementing
   - Does not necessarily support storing values
     - i.e.writing values to the pointedelement
     - i.e. not necessarily mutable
-  - Opposite ofOutput iterator, in some sense
-
+  - Opposite of `Output iterator`, in some sense
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators
-Forward Iterator
-  - Refinement ofInput&amp;Outputiterators
+- `Forward Iterator`
+  - Refinement of `Input` &amp; `Output` iterators
   - Reflects the idea of a linear sequence of values
-    - Allowsmultipassalgorithms
+    - Allows multipass algorithms
   - Implementations can be mutable/immutable
   - Can only increment, i.e. can't "go back", only "forward"
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators
-Bidirectional Iterator
-  - Refinement ofForward Iterator
+- `Bidirectional Iterator`
+  - Refinement of `Forward Iterator`
   - Can be both incremented and decremented
     - i.e. allows "going back"
 
-
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators
-Random Access Iterator
-  - Refinement of Bidirectional Iterator
+- `Random Access Iterator`
+  - Refinement of `Bidirectional Iterator`
   - Constant-time moving in arbitrarily-sized steps
     - i.e. can increment/decrement with any value, not just 1 step like other iterators
   - e.g. increment a random access iterator 5 steps:
-    - Note: using vector iterator, as it is a Random Access Iterator
-vector&lt;int&gt;::iteratoriter=someVector.begin();
-iter+=5;
 
+```cpp
+vector<int>::iteratoriter = someVector.begin();
+iter += 5;
+// using vector iterator, as it is a Random Access Iterator
+```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators and Containers
-Most container operations require iterators or return iterators
-  - erase(),find(),insert()to name a few
-Some containers require iterators
+- Most container operations require iterators or return iterators
+  - `erase()`, `find()`, `insert()` to name a few
+- Some containers require iterators
   - To access elements in a meaningful way
-  - list,set,multiset,multimap
-Iterating over maps/sets
+  - list, set, multiset, multimap
+- Iterating over maps/sets
   - Gives the elements in order
-Note: Container iterators are at leastForward
+- Note:: Container iterators are at least `Forward`
 
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -527,10 +525,6 @@ Start a loop, incrementing the iterator
   - Stop if the iterator equals.end()of container
     - end()– iterator pointing "after the last element"
   - At each step, the iterator will point to an element (unless you've reachedend())
-    - 
-  - 
-
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators and Containers
@@ -549,7 +543,7 @@ cout&lt;&lt;(*stringsIter)&lt;&lt;endl;
 }
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Iterating Over Containers
 ## Live Demo
 
@@ -561,8 +555,6 @@ Don't overuse iterators
 vectoranddequesupport the[]operator
   - For both,[]does fast pointer arithmetic
   - Faster to traverse by index, than by iterator
-  - 
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Iterators and Containers
@@ -584,12 +576,12 @@ Simple problem: You are given asentence and a word contained in that sentence.
 
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Using Iterators to Take Advantage of Container Operations
 ## Live Demo
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Insertion &amp; Stream Iterators
 ## ostream/istreamiterators, front/back insertion
 
@@ -619,7 +611,7 @@ ostream_iterator&lt;int&gt;coutIterator(cout,",");
 //stream advances to next position
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # ostream_iteratorBasic Usage
 ## Live Demo
 
@@ -641,7 +633,7 @@ ssIterator++; //advance to next value
 }
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # istream_iteratorBasic Usage
 ## Live Demo
 
@@ -674,7 +666,7 @@ front_insert_iterator&lt; list&lt;string&gt; &gt;frontInserter(words);
 back_insert_iterator&lt; list&lt;string&gt; &gt;backInserter(words);
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Insertion Iterators:Basic Usage
 ## Live Demo
 
@@ -687,7 +679,7 @@ Pointers can be implicitly converted to Random Access Iterators
     - You just pass pointers to the array/elements in the array
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Common STL Algorithms
 ## Sorting, Searching, Mutating, Heaps,Combinatorics, etc.
 
@@ -740,7 +732,7 @@ swap_ranges(first, last,first2)
   - Exchanges therange[first1, last)with therange[first2, first2 + (last1 – first1))and returns theelement after the secondrange
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Mutating Algorithms
 ## Live Demo
 
@@ -756,7 +748,7 @@ stable_sort(first, last)
   - 
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Sorting Algorithms
 ## Live Demo
 
@@ -775,7 +767,7 @@ stable_sort(first, last)
   - 
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Heap Operations,a.k.a.How to Make a Priority Queue
 ## Live Demo
 
@@ -789,12 +781,12 @@ prev_permutation(first, last)
 
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Permutation Algorithms
 ## Live Demo
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Functors
 ## Injecting Custom Logic Into Containers and Algorithms
 
@@ -879,7 +871,7 @@ iter!=nums.end();iter++)
 cout&lt;&lt;*iter&lt;&lt;endl; //elements in descending order
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Functors: Change Container Ordering
 ## Live Demo
 
@@ -904,7 +896,7 @@ EqualEpsilon(0.1)); //will compare by epsilon 0.1
 }
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Functors: Arbitrary Epsilon for Equal Algorithm
 ## Live Demo
 
@@ -920,7 +912,7 @@ The STL already has a lot of the common required functions defined, e.g.:
 CustomFunctorscan also be used to use sets/maps with your own classes
 
 
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # Examples ofFunctorCustomizations in theSTL
 ## Live Demo
 

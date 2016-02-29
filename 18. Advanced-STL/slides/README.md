@@ -32,36 +32,34 @@
   - Concepts
   - Creating and using Generators, Unary and Binary Functors
 
+<!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers
 ## STL Container Architecture, Advanced Containers
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers
-STL Containers represent collections ofobjects
+- STL Containers represent collections of objects
   - Going through objects is called iterating
-Several baseconcepts &amp; refinementsfor all STL containers:
+- Several base concepts &amp; refinements for all STL containers:
   - Container
   - Forward Container, Reversible Container
   - Random Access Container
-Concepts – definitions, not implementations
-Refinements – extensions/specificdefinitions
-- 
-
+- Concepts – definitions, not implementations
+- Refinements – extensions/specific definitions
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers
-Containers also fall into one of two groups:
+- Containers also fall into one of two groups:
   - Sequences
   - Associative containers
-Actualdata structuresare modelsof theabove
+- Actual data structures are models of the above
   - i.e. implementations of the Concepts
   - e.g. a vector is a model of a Sequence
 
-
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers – Pseudo-Diagram
+<!-- TODO: fix this slide, maybe an image -->
 - Container
 - Forward, Reversible, Random Access
 - Sequence
@@ -81,82 +79,70 @@ Actualdata structuresare modelsof theabove
 - priority_queue
 - Adaptor
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers
-STL Containers are templates
+- STL Containers are templates
   - A template is filled compile-time with type data
   - i.e. a STL container is defined once
     - compiled into different classes
     - depending on its passed template parameters
-  - E.g.  the container classvectoris defined in the header&lt;vector&gt;once, but we can:
-    - use avector&lt;int&gt;, to store integers
-    - use anothervector&lt;string&gt;to store strings, etc.
-
+  - E.g. the container class `vector` is defined in the header `<vector>` once, but we can:
+    - use a `vector<int>`, to store integers
+    - use another `vector<string>` to store strings, etc.
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers
-Containerconcept
+- `Container` concept
   - Stores elements, element lifetime ends when container lifetime ends
   - No guarantees on element order
-Forward Containerconcept (refinement ofContainer)
+- `Forward Container` concept (refinement of `Container`)
   - Elements have some order
   - Order won't change as a side effect of going through (iterating) the elements
   - Guarantees "forward direction" of iteration
-  - 
-  - 
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers
-Reversible Containerconcept (refinement ofForward Container)
+- `Reversible Container` concept (refinement of `Forward Container`)
   - Guarantees two (opposite) directions of iteration – "forward" and "backward"
-Random Access Container(refinement ofReversible Container)
+- `Random Access Container` (refinement of `Reversible Container`)
   - Guarantees (amortized) constant time access to any contained element
   - i.e. can access an element, without iterating other elements to reach it
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Sequences
-Sequencesare refinements ofForward Containers
+- `Sequences` are refinements of `Forward Containers`
   - Have a definite ordering of elements
   - Have variable size – elements can be added indefinitely, at specific positions
-Sequence models:
-  - vector
-  - list
-  - deque
-
+- Sequence models:
+  - `vector`
+  - `list`
+  - `deque`
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Associative Containers
-Associative ContainersareContainers
-  - Similar toSequences, but cannot add elements at specific positions
+- `Associative Containers` are `Containers`
+  - Similar to `Sequences`, but cannot add elements at specific positions
   - Each element has a key and a value
   - Elements are accessed by their key
   - Elements can be added indefinitely, but the container decides their "position"
-Several types (to be discussed later)
-  - 
-
+- Several types (to be discussed later)
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Container Adaptors
-Adaptors limit access to containers
+- Adaptors limit access to containers
   - Fundamental for FIFO and LIFO data structures
-Adaptor models:
-  - queue
-  - stack
-  - priority_queue
-
+- Adaptor models:
+  - `queue`
+  - `stack`
+  - `priority_queue`
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Advanced Container Models
-## priority_queue, map, set,multimap,multiset, Usage andExamples
-Note: for basic container models, seeBasic ADTs in STL
-
+## priority_\queue, map, set, multimap, multiset, Usage and Examples
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Priority Queue
-Thepriority_queueis aqueue
+- The `priority_queue` is a `queue`
   - Enables insertion of elements
   - Enables access/removal of "top" element
   - "First" element is referred to as "top" element
@@ -165,64 +151,64 @@ Thepriority_queueis aqueue
     - Last lexicographically for strings (by default)
     - Or according to a comparer
     - Or overloaded operators for other types
-  - 
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Priority Queue
-Priority Queue (#include&lt;queue&gt;)
-  - priority_queue&lt;T,Sequence = vector&lt;T&gt;,Compare=less&lt;T&gt; &gt;
-  - Thas to be able to be compared byCompare
+- Priority Queue (`#include<queue>`)
+  - `priority_queue<T, Sequence = vector<T>, Compare = less<T> >`
+  - `T` has to be able to be compared by `Compare`
   - Fast at accessing the top element (1)
   - Fast at inserting elements (log n)
   - Good at removing top element (log n)
-  - Uses a container for storing elements (default:vector)
-  - 
-- - 16
-
+  - Uses a container for storing elements (default: `vector`)
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Priority Queue
-Declaring and initializing a priority queue:
-- Retrieving top element:
-- Removing top element:
-- 
+- Declaring and initializing a priority queue:
 
-#include&lt;queue&gt; //required header
-…
-priority_queue&lt;int&gt;numsBySize;
+```cpp
+#include<queue> //required header
+
+priority_queue<int>numsBySize;
 numsBySize.push(1);
 numsBySize.push(3);
 numsBySize.push(2);
 
-priority_queue&lt;string&gt;stringsByLex;
+priority_queue<string>stringsByLex;
 stringsByLex.push("a");
 stringsByLex.push("c");
 stringsByLex.push("b");
-numsBySize.top() //returns 3, does not remove it
-stringsByLex.pop() //removes "c"
+```
 
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Priority Queue
+- Retrieving top element:
+
+```cpp
+numsBySize.top(); //returns 3, does not remove it
+```
+- Removing top element:
+
+```cpp
+stringsByLex.pop(); // removes "c"
+```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Priority Queue Usage
 ## Live Demo
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Problems Solved with Priority Queues
-Finding shortest path in weighted graphs (Dijkstra'salgorithm uses priority queues)
-Getting largest N items from several sorted lists
-Compression in Huffman coding
-Heapsort(STL priority queue uses a heap)
-Simple problem:
-  - Given a sequence of numbers, eachtime a numbersis0, print the largest number so-far
-  - 
-
+- Finding shortest path in weighted graphs (Dijkstra's algorithm uses priority queues)
+- Getting largest **N** items from several sorted lists
+- Compression in Huffman coding
+- Heapsort (STL priority queue uses a heap)
+- Simple problem:
+  - Given a sequence of numbers, eachtime a numbers is `0`, print the largest number so-far
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Simple Problem Solved with a Priority Queue
 ## Live Demo
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Associative Container Models
@@ -232,96 +218,102 @@ Simple problem:
   - Elements are their own keys
 - Pair Associative Container
   - Values are in the form (key, element)
-- SortedAssociativeContainers
-  - Elements ordered, most operations are log n
+- Sorted Associative Containers
+  - Elements ordered, most operations are log(n)
 - Unique Associative Containers
   - No duplicate keys are allowed
 
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Set
-Categories:Sorted,Simple,Unique
-Elements are their own keys
+- Categories: `Sorted`, `Simple`, `Unique`
+- Elements are their own keys
   - E.g. if you want to check if an element is contained, you query with the (copy) of the element
-Guarantees no duplicate elements
-Extracting elements one by one:
+- Guarantees no duplicate elements
+- Extracting elements one by one:
   - Yields the elements in ascending order
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Set
-Set (#include&lt;set&gt;)
-  - set&lt;Key,Compare = less&lt;Key&gt;,Alloc= new&gt;
-  - Keyhas to be comparable byCompare
+- Set (`#include<set>`)
+  - `set<Key, Compare = less<Key>, Alloc = new>`
+  - `Key` has to be comparable by `Compare`
   - Fast checking if an element is contained (log n)
   - Fast inserting elements (log n)
   - Fast deleting (erasing) elements (log n)
   - Deleting elements does not invalidate iterators to other elements
-- - 23
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Set
-Declaring and initializing a set:
-- Set elements can be accessed through iterator (and consequently iterated in ascending order)
-- Set elements can be removed
-  - By iterator
-  - By value
-- 
-- 
+- Declaring and initializing a set:
 
-#include&lt;set&gt; //required header
-…
-set&lt;int&gt;uniqueNums;
+```cpp
+#include<set> // required header
+
+set<int> uniqueNums;
 uniqueNums.insert(3);
 uniqueNums.insert(7);
 uniqueNums.insert(2);
 uniqueNums.insert(7);
-uniqueNumbers.begin(); //iterator to first element (2)
-uniqueNums.erase(uniqueNums.begin());
-uniqueNums.erase(2);
+```
 
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+# Set
+- Set elements can be accessed through iterator (and consequently iterated in ascending order)
+
+```cpp
+uniqueNumbers.begin(); // iterator to first element
+```
+- Set elements can be removed
+  - By iterator
+
+```cpp
+uniqueNums.erase(uniqueNums.begin());
+```
+  - By value
+
+```cpp
+uniqueNums.erase(2);
+```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Set Usage
 ## Live Demo
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Problems Solved withSets
-Any problems including mathematical set operations
+- Any problems including mathematical set operations
   - Unions, intersections, etc.
-Set Cover Problem
-Simple problem:
+- Set Cover Problem
+- Simple problem:
   - You are given a sequence of numbers. Print all numbers in the sequence, without printing the same number more than once
-
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Simple Problem Solved with a Set
 ## Live Demo
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Multiset
-Same as aset, without theUniquecategory
+- Same as a `set`, without the `Unique` category
   - i.e. there can be repeating elements
   - All other operations &amp; properties are the same
-Multiset(#include &lt;set&gt;)
-  - multiset(same template parameters asset)
-  - Declaring and initializing amultiset
-  - 
-#include&lt;set&gt; //required header
-…
-multiset&lt;int&gt;nums;
-nums.insert(2);
-nums.insert(2); //numscontains: 2, 2
+- Multiset (`#include <set>`)
+  - `multiset` (same template parameters as `set`)
+  - Declaring and initializing a `multiset`
 
+```cpp
+#include<set> // required header
+
+multiset<int> nums;
+nums.insert(2);
+nums.insert(2); // nums contains: 2, 2
+```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# MultisetUsage
+# Multiset Usage
 ## Live Demo
 
-
+<!-- TODO: fix slides to bottom -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Map
 Categories:Sorted,Unique,Pair

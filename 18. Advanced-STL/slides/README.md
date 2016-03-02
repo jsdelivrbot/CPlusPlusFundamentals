@@ -38,7 +38,7 @@
 ## STL Container Architecture, Advanced Containers
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Containers
+<!-- # Containers -->
 - STL Containers represent collections of objects
   - Going through objects is called iterating
 - Several base concepts &amp; refinements for all STL containers:
@@ -49,7 +49,7 @@
 - Refinements – extensions/specific definitions
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Containers
+<!-- # Containers -->
 - Containers also fall into one of two groups:
   - Sequences
   - Associative containers
@@ -63,7 +63,7 @@
 <img src="imgs/container-diagram.png">
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Containers
+<!-- # Containers -->
 - STL Containers are templates
   - A template is filled compile-time with type data
   - i.e. a STL container is defined once
@@ -74,7 +74,7 @@
     - use another `vector<string>` to store strings, etc.
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Containers
+<!-- # Containers -->
 - `Container` concept
   - Stores elements, element lifetime ends when container lifetime ends
   - No guarantees on element order
@@ -84,7 +84,7 @@
   - Guarantees "forward direction" of iteration
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Containers
+<!-- # Containers -->
 - `Reversible Container` concept (refinement of `Forward Container`)
   - Guarantees two (opposite) directions of iteration – "forward" and "backward"
 - `Random Access Container` (refinement of `Reversible Container`)
@@ -137,7 +137,7 @@
     - Or overloaded operators for other types
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Priority Queue
+<!-- # Priority Queue -->
 - Priority Queue (`#include<queue>`)
   - `priority_queue<T, Sequence = vector<T>, Compare = less<T> >`
   - `T` has to be able to be compared by `Compare`
@@ -147,7 +147,7 @@
   - Uses a container for storing elements (default: `vector`)
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Priority Queue
+<!-- # Priority Queue -->
 - Declaring and initializing a priority queue:
 
 ```cpp
@@ -165,7 +165,7 @@ stringsByLex.push("b");
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Priority Queue
+<!-- # Priority Queue -->
 - Retrieving top element:
 
 ```cpp
@@ -218,7 +218,7 @@ stringsByLex.pop(); // removes "c"
   - Yields the elements in ascending order
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Set
+<!-- # Set -->
 - Set (`#include<set>`)
   - `set<Key, Compare = less<Key>, Alloc = new>`
   - `Key` has to be comparable by `Compare`
@@ -228,7 +228,7 @@ stringsByLex.pop(); // removes "c"
   - Deleting elements does not invalidate iterators to other elements
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Set
+<!-- # Set -->
 - Declaring and initializing a set:
 
 ```cpp
@@ -242,7 +242,7 @@ uniqueNums.insert(7);
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Set
+<!-- # Set -->
 - Set elements can be accessed through iterator (and consequently iterated in ascending order)
 
 ```cpp
@@ -265,7 +265,7 @@ uniqueNums.erase(2);
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Problems Solved withSets
+# Problems Solved with Sets
 - Any problems including mathematical set operations
   - Unions, intersections, etc.
 - Set Cover Problem
@@ -307,7 +307,7 @@ nums.insert(2); // nums contains: 2, 2
 - Often pictured as an array, the indices of which can be any type – number, string or even some class
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Map
+<!-- # Map -->
 - Map (`#include<map>`)
   - `map<Key, Data, Compare = less<Key>, Alloc = new>`
   - `Key` must be comparable by `Compare`
@@ -318,7 +318,7 @@ nums.insert(2); // nums contains: 2, 2
     - Iterators will point to `std::pair` objects
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Map
+<!-- # Map -->
 - Declaring and initializing a map:
 
 ```cpp
@@ -370,7 +370,7 @@ peopleAges.erase("Joro");
   - Most element access is done through iterators
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Multimap
+<!-- # Multimap -->
 - Multimap(`#include<map>`)
   - `multimap` (same template parameters as `map`)
   - Declaring and initializing a multimap
@@ -396,7 +396,7 @@ personNicks.insert({"George", "Gopi"});
 ## The Way of STL Element Access
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators
+<!-- # Iterators -->
 - Iterators are a pattern in STL
 - Enable access to container elements
   - For almost any container's elements
@@ -407,7 +407,7 @@ personNicks.insert({"George", "Gopi"});
   - Can be `const`
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:42px' } -->
-# Iterators
+<!-- # Iterators -->
 - Each container defines its own iterator type
   - A class inside the container's class
 - Syntax to access iterator type
@@ -437,7 +437,7 @@ cout << *numsIter << endl;
 ## Syntax, Usage, Examples
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators
+<!-- # Iterators -->
 - Several types of iterator Concepts
   - with differing purposes and functionality
 - `Output Iterator`
@@ -449,7 +449,7 @@ cout << *numsIter << endl;
     - i.e. no guarantee on dereferencing, comparing…
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators
+<!-- # Iterators -->
 - `Input Iterator`
   - Supports dereferencing
   - Supports incrementing
@@ -459,7 +459,7 @@ cout << *numsIter << endl;
   - Opposite of `Output iterator`, in some sense
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators
+<!-- # Iterators -->
 - `Forward Iterator`
   - Refinement of `Input` &amp; `Output` iterators
   - Reflects the idea of a linear sequence of values
@@ -468,14 +468,14 @@ cout << *numsIter << endl;
   - Can only increment, i.e. can't "go back", only "forward"
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators
+<!-- # Iterators -->
 - `Bidirectional Iterator`
   - Refinement of `Forward Iterator`
   - Can be both incremented and decremented
     - i.e. allows "going back"
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators
+<!-- # Iterators -->
 - `Random Access Iterator`
   - Refinement of `Bidirectional Iterator`
   - Constant-time moving in arbitrarily-sized steps
@@ -490,7 +490,7 @@ iter += 5;
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators and Containers
+<!-- # Iterators and Containers -->
 - Most container operations require iterators or return iterators
   - `erase()`, `find()`, `insert()` to name a few
 - Some containers require iterators
@@ -501,7 +501,7 @@ iter += 5;
 - Note&#58; Container iterators are at least `Forward`
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators and Containers
+<!-- # Iterators and Containers -->
 - Iterating a container
   - i.e. go through container elements with iterator
 - Instantiate an iterator of the container's type
@@ -512,7 +512,7 @@ iter += 5;
   - At each step, the iterator will point to an element (unless you've reached `end()`)
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators and Containers
+<!-- # Iterators and Containers -->
 - Iterating a `set<string>`
   - Result: strings in lexicographical order
 
@@ -534,7 +534,7 @@ for(set<string>::iterator it = orderedStrings.begin();
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators and Containers
+<!-- # Iterators and Containers -->
 - Don't overuse iterators
   - Especially for `Random Access Containers`
 - `vector` and `deque` support the `[]` operator
@@ -542,7 +542,7 @@ for(set<string>::iterator it = orderedStrings.begin();
   - Faster to traverse by index, than by iterator
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators and Containers
+<!-- # Iterators and Containers -->
 - Iterators are the standard link between data structures and algorithms in STL
   - Some algorithms will return results by iterator
   - You will have to iterate the results
@@ -553,7 +553,7 @@ for(set<string>::iterator it = orderedStrings.begin();
     - As long as both understand iterators
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Iterators and Containers
+<!-- # Iterators and Containers -->
 - Simple problem: You are given asentence and a word contained in that sentence.
   - Show the positions at which the word is (first word is position 0, second position 1, etc.)
 
@@ -567,7 +567,7 @@ for(set<string>::iterator it = orderedStrings.begin();
 ## ostream/istream iterators, front/back insertion
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:42px' } -->
-# Insertion &amp; Stream Iterators
+<!-- # Insertion &amp; Stream Iterators -->
 - STL has built-in iterators for input/output
   - `Input` &amp; `Output` iterator implementations
   - `#include<iterator>`
@@ -579,7 +579,7 @@ for(set<string>::iterator it = orderedStrings.begin();
   - `insertion_iterator`, `front_insertion_iterator`, `back_insertion_iterator`
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Insertion &amp; Stream Iterators
+<!-- # Insertion &amp; Stream Iterators -->
 - `ostream_iterator<T, ...>`
   - `T` is the data type to write to the stream
   - Other template parameters <!-- info here -->
@@ -600,7 +600,7 @@ ostream_iterator<int> coutIterator(cout, ", ");
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Insertion &amp; Stream Iterators
+<!-- # Insertion &amp; Stream Iterators -->
 - `istream_iterator<T, ...>`
   - Initializing with a stream:
 
@@ -634,7 +634,7 @@ while(ssIterator != intEOS)
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:40px' } -->
-# Insertion &amp; Stream Iterators
+<!-- # Insertion &amp; Stream Iterators -->
 - `insert_iterator<Container>`
   - Container must support `insert()`
   - Initialize by container instance and iterator in it
@@ -654,7 +654,7 @@ insert_iterator<list<string>> wordInserter(words, wordsMiddle);
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Insertion &amp; Stream Iterators
+<!-- # Insertion &amp; Stream Iterators -->
 - `front_insert_iterator` &amp; `back_insert_iterator`
   - Modifications of `insert_iterator`
   - Insert only at front/back of a container
@@ -684,7 +684,7 @@ back_insert_iterator<list<string>> backInserter(words);
 ## Sorting, Searching, Mutating, Heaps, Combinatorics, etc.
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Common STL Algorithms
+<!-- # Common STL Algorithms -->
 - The STL has a wide range of built-in algorithms, in several categories
   - Non-mutating (searching, counting, etc.)
   - Mutating (removing, rotating, swapping, etc.)
@@ -694,7 +694,7 @@ back_insert_iterator<list<string>> backInserter(words);
   - Set, comparison, numeric, min/max operations
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Common STL Algorithms
+<!-- # Common STL Algorithms -->
 - Some common principles used by algorithms
   - Algorithms on ranges take them as iterators
     - In the form `[first, last)`, i.e. last is non-inclusive
@@ -712,7 +712,7 @@ back_insert_iterator<list<string>> backInserter(words);
   - Checks if the range `[first1, last)` is element-by-element equal to the range `[first2, first2 + (last1 – first1))`
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
-# Searching, Counting, Matching
+<!-- # Searching, Counting, Matching -->
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:42px' } -->
@@ -726,7 +726,7 @@ back_insert_iterator<list<string>> backInserter(words);
   - Exchanges the range `[first1, last)` with the range `[first2, first2 + (last1 – first1))` and returns the element after the second range
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
-# Mutating Algorithms
+<!-- # Mutating Algorithms -->
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
@@ -738,7 +738,7 @@ back_insert_iterator<list<string>> backInserter(words);
   - Potentially a bit slower than sort in its worst case
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
-# Sorting Algorithms
+<!-- # Sorting Algorithms -->
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:38px' } -->
@@ -773,7 +773,7 @@ back_insert_iterator<list<string>> backInserter(words);
 ## Injecting Custom Logic Into Containers and Algorithms
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Functors
+<!-- # Functors -->
 - A Function Object (Functor) is anything, which can be called as a function
   - A function is a functor
   - A function pointer is a functor
@@ -784,7 +784,7 @@ back_insert_iterator<list<string>> backInserter(words);
   - Binary Function, Binary Predicate
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Functors
+<!-- # Functors -->
 - Generator – called with no arguments
 - Unary Function – receives a single argument
 - Binary Function – receives two arguments
@@ -792,7 +792,7 @@ back_insert_iterator<list<string>> backInserter(words);
 - Binary Predicate – Binary Function, which returns `bool`
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:40px' } -->
-# Functor
+<!-- # Functors -->
 - Defining a Binary Predicate for a "greater than" relation
   - As a function:
 
@@ -815,7 +815,7 @@ struct GreaterThan
 ```
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Functor
+<!-- # Functors -->
 - Advantages to picking the class/struct definition
   - Can keep object state
     - e.g. count number of comparisons, calculate sum and average of arguments, etc.
@@ -823,7 +823,7 @@ struct GreaterThan
     - struct/class create types, while simply taking a function name will give an error
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Functors
+<!-- # Functors -->
 - Most containers and algorithms take `Functors`:
   - Algorithms take `Functor` objects
   - Containers take `Functor` types (template args)
@@ -834,7 +834,7 @@ struct GreaterThan
     - Or different ordering rules for the sort algorithm
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Functors
+<!-- # Functors -->
 - Example: Using a `Functor` to order a `set`'s elements in descending order
 
 ```cpp
@@ -858,7 +858,7 @@ for(int el : nums)
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:40px' } -->
-# Functors
+<!-- # Functors -->
 - Example: Using a `Functor` to compare ranges of doubles by arbitrary epsilon, instead of absolutely:
 
 ```cpp
@@ -884,7 +884,7 @@ equal(range1.begin(), range1.end(),
 ## Live Demo
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
-# Functors
+<!-- # Functors -->
 - STL already has a lot of the common required functions defined, e.g.:
   - `greater<T>`
   - `less<T>`

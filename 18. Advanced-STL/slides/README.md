@@ -59,25 +59,8 @@
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers – Pseudo-Diagram
-<!-- TODO: fix this slide, maybe an image -->
-- Container
-- Forward, Reversible, Random Access
-- Sequence
-- Front/Back Insertion
-- AssociativeContainer
-- Simple, Pair, Sorted, Unique
-- vector
-- list
-- deque
-- bit_vector
-- set
-- map
-- multiset
-- multimap
-- stack
-- queue
-- priority_queue
-- Adaptor
+
+<img src="imgs/container-diagram.png">
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Containers
@@ -314,7 +297,6 @@ nums.insert(2); // nums contains: 2, 2
 # Multiset Usage
 ## Live Demo
 
-<!-- TODO: fix slides to bottom -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 # Map
 - Categories: `Sorted`, `Unique`, `Pair`

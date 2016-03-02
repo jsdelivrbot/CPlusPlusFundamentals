@@ -136,6 +136,7 @@
   - `stack`
   - `priority_queue`
 
+<!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Advanced Container Models
 ## priority\_queue, map, set, multimap, multiset, Usage and Examples
@@ -407,6 +408,7 @@ personNicks.insert({"George", "Gopi"});
 # Multimap Usage
 ## Live Demo
 
+<!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Iterators
 ## The Way of STL Element Access
@@ -577,6 +579,7 @@ for(set<string>::iterator it = orderedStrings.begin();
 # Using Iterators to Take Advantage of Container Operations
 ## Live Demo
 
+<!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Insertion &amp; Stream Iterators
 ## ostream/istream iterators, front/back insertion
@@ -644,7 +647,6 @@ while(ssIterator != intEOS)
 }
 ```
 
-
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section demo' } -->
 # `istream_iterator` Basic Usage
 ## Live Demo
@@ -694,6 +696,7 @@ back_insert_iterator<list<string>> backInserter(words);
   - E.g. algorithms using Random Access Iterators can be executed on arrays
     - You just pass pointers to the array/elements in the array
 
+<!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Common STL Algorithms
 ## Sorting, Searching, Mutating, Heaps, Combinatorics, etc.
@@ -782,6 +785,7 @@ back_insert_iterator<list<string>> backInserter(words);
 # Permutation Algorithms
 ## Live Demo
 
+<!-- section start -->
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true, class:'slide-section' } -->
 # Functors
 ## Injecting Custom Logic Into Containers and Algorithms

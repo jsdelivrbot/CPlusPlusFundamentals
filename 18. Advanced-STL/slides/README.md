@@ -151,7 +151,7 @@
 - Declaring and initializing a priority queue:
 
 ```cpp
-#include<queue> //required header
+#include<queue> // required header
 
 priority_queue<int>numsBySize;
 numsBySize.push(1);
@@ -169,7 +169,7 @@ stringsByLex.push("b");
 - Retrieving top element:
 
 ```cpp
-numsBySize.top(); //returns 3, does not remove it
+numsBySize.top(); // returns 3, does not remove it
 ```
 - Removing top element:
 

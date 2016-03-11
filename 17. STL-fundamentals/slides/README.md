@@ -30,7 +30,7 @@
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # Abstract Data Types -->
 - An Abstract Data Type (ADT) is a data type together with the operations, whose properties are specified independently of any particular implementation
-  - ADT are set of definitions ofoperations
+  - ADT are set of definitions of operations
   - Can have several different implementations
   - Different implementations can have different efficiency
 
@@ -265,7 +265,7 @@ numbers.push_back(2);
 numbers.push_front(1);
 numbers.push_back(3);
 ```
-- List sizeand is obtained by calling `size()`
+- List size and is obtained by calling `size()`
 - List elements can be removed from front and back fast
 
 ```cpp
@@ -359,7 +359,7 @@ cout << q.back();
 - Declaring and initializing a stack
 
 ```cpp
-stack<int>s;
+stack<int> s;
 
 s.push(1);
 s.push(2);

@@ -282,12 +282,16 @@ numbers.pop_back();
 cout << numbers.front();
 cout << numbers.back();
 ```
+
+<!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
+<!-- # STL (Linked) List -->
+- Accessing list elements
   - Only way to get access to all elements – traversal by iterator
 
 ```cpp
-list<int>::iteratornumbersIterator;
-for(numbersIterator=numbers.begin();
-  numbersIterator!=numbers.end();
+list<int>::iterator numbersIterator;
+for(numbersIterator = numbers.begin();
+  numbersIterator != numbers.end();
   numbersIterator++)
 {
   cout << *numbersIterator << endl;
